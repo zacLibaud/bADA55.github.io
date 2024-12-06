@@ -1,3 +1,13 @@
+# README (how to process)
+
+# References
+
+- [How Music Moves Movies](https://team-charisma.github.io/)
+- [Modern Times - Rise of Technology in Cinema](https://adacalypse.github.io/modern-times-ADA/)
+- [Cheers to Change!](https://hadriensevel.github.io/vivalavada/)
+- [Human vs AI: A Comparison of Human and LLM Wikispeedia Performance](https://drudilorenzo.github.io/ada-klech-data-story/#)
+
+
 # Beautiful Jekyll
 
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
