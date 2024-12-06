@@ -2,10 +2,12 @@
 
 # References
 
-- [How Music Moves Movies](https://team-charisma.github.io/)
-- [Modern Times - Rise of Technology in Cinema](https://adacalypse.github.io/modern-times-ADA/)
-- [Cheers to Change!](https://hadriensevel.github.io/vivalavada/)
-- [Human vs AI: A Comparison of Human and LLM Wikispeedia Performance](https://drudilorenzo.github.io/ada-klech-data-story/#)
+## Website, Repository
+
+- [How Music Moves Movies](https://team-charisma.github.io/), [repo](https://github.com/Team-CHaRiSMa/Team-CHaRISMa.github.io)
+- [Modern Times - Rise of Technology in Cinema](https://adacalypse.github.io/modern-times-ADA/), [repo](https://github.com/adacalypse/modern-times-ADA)
+- [Cheers to Change!](https://hadriensevel.github.io/vivalavada/), [repo](https://github.com/hadriensevel/vivalavada)
+- [Human vs AI: A Comparison of Human and LLM Wikispeedia Performance](https://drudilorenzo.github.io/ada-klech-data-story/), [repo](https://github.com/drudilorenzo/ada-klech-data-story)
 
 
 # Beautiful Jekyll
