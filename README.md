@@ -1,6 +1,7 @@
 # README (how to process)
 
-- Edit **only** `readme.md`
+- Edit **only** `index.md`
+- Add **html** figures in `figs/`
 
 # References
 
