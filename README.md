@@ -1,5 +1,7 @@
 # README (how to process)
 
+- Edit **only** `readme.md`
+
 # References
 
 ## Website, Repository
