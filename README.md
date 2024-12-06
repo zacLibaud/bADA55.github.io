@@ -1,6 +1,7 @@
 # README (how to process)
 
 - Edit **only** `index.md`
+- Edit directly on github in **master**, commit changes and wait for deployment (until it turns green check)
 - Add **html** figures in `figs/`
 
 # References
