@@ -18,4 +18,6 @@ all the dots to reveal how music moves movies towards success. Let's dive deep i
 
 # Deciphering Country-Specific Music Styles
 
+{% include_relative figure_interactive.html %}
+
 ## Movie Metadata Dataset (CMU Movie Summary Corpus) 
