@@ -5,7 +5,7 @@
 
 # References
 
-## Website, Repository
+## website, repository
 
 - [How Music Moves Movies](https://team-charisma.github.io/), [repo](https://github.com/Team-CHaRiSMa/Team-CHaRISMa.github.io)
 - [Modern Times - Rise of Technology in Cinema](https://adacalypse.github.io/modern-times-ADA/), [repo](https://github.com/adacalypse/modern-times-ADA)
