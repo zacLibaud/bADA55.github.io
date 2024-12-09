@@ -35,9 +35,18 @@ I'm not happy that the coefficients are different... Does it really matter? Can 
 
 To complete this project, we have used various resources, which are listed here.
 
+- [[paper][A]] Julian McAuley, Jure Leskovec, Dan Jurafsky, **Learning Attitudes and Attributes from Multi-Aspect Reviews**, Stanford.
+
+- [[paper][B]] Gael Lederrey, Robert West, **When Sheep Shop: Measuring Herding Effects in Product Ratings with Natural Experiments**, EPFL.
+
+
+
 - [[website][14]] Wikipedia **Timeline of Computer Animation**
 
 - [[image][G]] By Athanasius Kircher, Public Domain
+
+[A]: https://stanford.edu (ajustez avec le lien direct si disponible)
+[B]: https://dlab.epfl.ch/people/west/pub/Lederrey-West_WWW-18.pdf
 
 [14]: https://en.wikipedia.org/wiki/Timeline_of_computer_animation_in_film_and_television
 [G]: https://commons.wikimedia.org/w/index.php?curid=52666213
