@@ -22,6 +22,7 @@ author: bADA55
 navbar-links:
   About Us: "aboutme"
   Resources:
+    - Our dataset: "https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
