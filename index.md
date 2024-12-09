@@ -2,6 +2,10 @@
 layout: page
 title: "BeerAdvocate vs RateBeer" 
 subtitle: "Which Platform is Best Suited for You?"
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+use-site-title: true
 ---
 
 # Introduction
