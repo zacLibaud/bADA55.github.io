@@ -1,6 +1,6 @@
 # Which Platform is Best Suited for You? (Final README)
 
-This is the repository of the website(LIEN) for the CS-401 Applied Data Analysis(LIEN) EPFL course project of the team bADA55.
+This is the repository of the <a href="https://zaclibaud.github.io/bADA55.github.io/" target="_blank" rel="noopener noreferrer">website</a> for the CS-401 Applied Data Analysis(LIEN) EPFL course project of the team bADA55.
 
 The repository of the project can be found here(LIEN).
 
