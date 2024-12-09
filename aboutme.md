@@ -1,16 +1,21 @@
 ---
 layout: page
 title: About us
-subtitle: bADA55
+subtitle: For the more curious
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## Who are we? 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+We are bADA55 (read it as you can)! A team formed for the occasion, during a very cold winter semester in Lausanne, who present here their discoveries in the form of a story. Here's a little more about each member of the group.
 
-What else do you need?
+**Zoé Monnard**,...
 
-### My story
+**Francois Goybet**,...
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+**Zacharie Libaud**,...
+
+**William Schmid**,...
+
+**Pierre Tessier**,...
+
+
