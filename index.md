@@ -5,6 +5,7 @@ title: Which Platform is Best Suited for You?
 
 # Introduction
 
+
 Hit musical numbers from the blockbuster movies ‘Dilwale Dulhania Le Jayenge’ and ‘Titanic’ 
 continue to occupy a special place in people’s hearts even today. This might make you think: 
 What are the secret ingredients of music that enrapture all of us and how does it add magic 
