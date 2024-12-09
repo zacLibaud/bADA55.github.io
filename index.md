@@ -45,7 +45,7 @@ To complete this project, we have used various resources, which are listed here.
 
 - [[image][G]] By Athanasius Kircher, Public Domain
 
-[A]: https://stanford.edu (ajustez avec le lien direct si disponible)
+[A]: http://i.stanford.edu/~julian/pdfs/icdm2012.pdf
 [B]: https://dlab.epfl.ch/people/west/pub/Lederrey-West_WWW-18.pdf
 
 [14]: https://en.wikipedia.org/wiki/Timeline_of_computer_animation_in_film_and_television
