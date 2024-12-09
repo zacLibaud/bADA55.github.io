@@ -20,6 +20,7 @@ author: bADA55
 ###############################################
 
 navbar-links:
+  Data Story : "index"
   About Us: "aboutme"
   Resources:
     - Our dataset: "https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing"
