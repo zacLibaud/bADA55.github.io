@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "BeerAdvocate vs RateBeer: Which Platform is Best Suited for You?"
+title: "BeerAdvocate vs RateBeer" 
+subtitle: "Which Platform is Best Suited for You?"
 ---
 
 # Introduction
