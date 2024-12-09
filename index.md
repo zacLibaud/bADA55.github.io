@@ -30,3 +30,14 @@ I'm not happy that the coefficients are different... Does it really matter? Can 
 # What kind of words do they use?
 
 # The final choice
+
+# References
+
+To complete this project, we have used various resources, which are listed here.
+
+- [[website][14]] Wikipedia **Timeline of Computer Animation**
+
+- [[image][G]] By Athanasius Kircher, Public Domain
+
+[14]: https://en.wikipedia.org/wiki/Timeline_of_computer_animation_in_film_and_television
+[G]: https://commons.wikimedia.org/w/index.php?curid=52666213
