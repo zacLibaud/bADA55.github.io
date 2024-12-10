@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "<span class='title-with-outline'>BeerAdvocate vs RateBeer</span>" 
+title: "BeerAdvocate vs RateBeer" 
 subtitle: "Which Platform is Best Suited for You?"
 cover-img: /assets/img/RB_vs_BA.png
 thumbnail-img: /assets/img/RB_vs_BA.png
