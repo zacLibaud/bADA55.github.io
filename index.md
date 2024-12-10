@@ -1,8 +1,7 @@
 ---
 layout: page
-title: "<span style='text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white;'>BeerAdvocate vs RateBeer</span>"
-
-subtitle: "Which Platform is Best Suited for You?"
+title: "<span style='text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; color: white;'>BeerAdvocate vs RateBeer</span>"
+subtitle: "<span style='color:red;'>Test Subtitle</span>"
 cover-img: /assets/img/RB_vs_BA.png
 thumbnail-img: /assets/img/RB_vs_BA.png
 share-img: /assets/img/RB_vs_BA.png
