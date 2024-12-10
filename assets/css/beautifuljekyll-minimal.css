@@ -12,10 +12,3 @@ footer.footer-min {
   text-align: center;
 }
 
-.title-with-outline {
-    text-shadow: -1px -1px 0 #000,  
-                 1px -1px 0 #000,
-                -1px 1px 0 #000,
-                 1px 1px 0 #000;
-    color: white; /* text color  */
-}
