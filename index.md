@@ -22,7 +22,7 @@ Today's dilemma is between RateBeer and BeerAdvocate, two competing platforms, a
 What is it? Aren't the ratings calculated in the same way on the 2 sites? I have the impression that 3.5/5 on BeerAdvocate doesn't have the same value as 3.5/5 on Rate Beer ... I need to check this...
 After some research, I've found out how the scores are calculated! Great stuff! Users rate beers on 5 topics: appearance, aroma, palate, taste and overall, but the 2 sites don't give the same importance to these topics! As a good statistician, I prefer to check this with my data. The results of my linear regression are the same as on the site, which makes sense. Here are my results: 
 
-{% include_relative figs/rating_coeff.html %}
+{% include_relative figs/rating_coeff2.html %}
 
 I'm not happy that the coefficients are different... Does it really matter? Can I be sure that the coefficients are really different? A good old-fashioned statistical test will tell me!  
 
