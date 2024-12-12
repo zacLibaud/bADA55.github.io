@@ -148,17 +148,17 @@ navbar-var-length: false
 #footer-link-col: "#404040"
 #footer-hover-col: "#0085A1"
 
-page-col: "#FAF3E0" #beige pale
+page-col: "#FFFFFF" #blanc
 text-col: "#404040" #noir
 link-col: "#008AFF" #Bleu (liens)
-hover-col: "#FAF3E0" #jaune pale
-navbar-col: "#714219" #marron
+hover-col: "#0085A1" #Bleu (surligne)
+navbar-col: "#3F2107" #marron
 navbar-text-col: "#FFC107" #jaune petant
-navbar-border-col: "#FAF3E0" #beige pale
-footer-col: "#714219" #marron
-footer-text-col: "#CEF25E" #Jaune petant plus clair
+navbar-border-col: "#FFFFFF" #blanc
+footer-col: "#3F2107" #marron ou 714219
+footer-text-col: "#777777" 
 footer-link-col: "#FFC107" #jaune petant
-footer-hover-col: "#F8E473" #jaune pale
+footer-hover-col: "#0085A1" #Bleu (surligne)
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
