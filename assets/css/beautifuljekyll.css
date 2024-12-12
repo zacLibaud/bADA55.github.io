@@ -400,7 +400,7 @@ img {
 }
 
 .navbar-custom .avatar-container .avatar-img-border {
-  width: 6.25rem; /* 3.125rem pour chaque avatar + 0.5rem de gap */
+  width: 6.25rem; /* Ajustée pour deux avatars avec espace */
   height: 3.125rem;
   display: flex;
   align-items: center;
