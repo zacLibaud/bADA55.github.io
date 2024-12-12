@@ -19,13 +19,26 @@ Today's dilemma is between RateBeer and BeerAdvocate, two competing platforms, a
 
 # How ratings works ?
 
-What is it? Aren't the ratings calculated in the same way on the 2 sites? I have the impression that 3.5/5 on BeerAdvocate doesn't have the same value as 3.5/5 on Rate Beer ... I need to check this...
-After some research, I've found out how the scores are calculated! Great stuff! Users rate beers on 5 topics: appearance, aroma, palate, taste and overall, but the 2 sites don't give the same importance to these topics! As a good statistician, I prefer to check this with my data. The results of my linear regression are the same as on the site, which makes sense. Here are my results: 
+The rating system is essential for understanding the scores given to a beer. Notably, the same overall rating on BeerAdvocate and RateBeer does not reflect identical scores across different topics. In theory, if a user provides the same scores and descriptions for a beer on both platforms, the overall score would still differ between the two sites.
+
+The topics considered in these ratings are as follows: **"appearance," "aroma," "palate," "taste," and "overall."** Concretely, the overall score is a weighted average of these topics' ratings. 
+We find the following weight for the topics:
 
 {% include_relative figs/rating_coeff2.html %}
 
-I'm not happy that the coefficients are different... Does it really matter? Can I be sure that the coefficients are really different? A good old-fashioned statistical test will tell me!  
+### Analysis of BeerAdvocate and RateBeer Notation System
 
+BeerAdvocate and RateBeer assign similar weights to **appearance**, **aroma**, and **palate** (approximately 6%-9%, 20%-24%, and 10%, respectively). These criteria contribute comparably to the overall rating on both platforms.
+
+However, significant differences emerge for **taste** and **overall**:  
+- BeerAdvocate gives much greater weight to **taste** (40%) compared to RateBeer (20%), indicating that the perception of taste is crucial for high ratings on BeerAdvocate.  
+- Conversely, RateBeer assigns double the weight to **overall** (42%) than BeerAdvocate (20%), emphasizing a more general, holistic evaluation.
+
+### Implications:  
+- **BeerAdvocate** prioritizes sensory aspects like **taste**, making it key for achieving high ratings.  
+- **RateBeer** takes a broader approach, with the **overall** impression being the most critical factor.
+
+This distinction helps explain why the same beer may receive different scores across the two platforms, even with similar topic-level ratings.
 
 # Who are the interesting users ?
 
