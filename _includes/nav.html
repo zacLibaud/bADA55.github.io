@@ -47,7 +47,7 @@
     {% endfor %}
   {% endif %}
 
-  {% if site.avatar and page.show-avatar != false %}
+  <!--{% if site.avatar and page.show-avatar != false %}
     <div class="avatar-container">
       <div class="avatar-img-border">
         <a href="{{ '/' | absolute_url }}">
@@ -55,8 +55,27 @@
         </a>
       </div>
     </div>
-  {% endif %}
+  {% endif %} -->
 
+  {% if site.avatar and page.show-avatar != false %}
+    <div class="avatar-container avatar-container-1">
+      <div class="avatar-img-border">
+        <a href="{{ '/' | absolute_url }}">
+          <img alt="Navigation bar avatar 1" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+        </a>
+      </div>
+    </div>
+    {% if site.avatar2 %}
+      <div class="avatar-container avatar-container-2">
+        <div class="avatar-img-border">
+          <a href="{{ '/' | absolute_url }}">
+            <img alt="Navigation bar avatar 2" class="avatar-img" src="{{ site.avatar2 | relative_url }}" />
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+  
 </nav>
 
 {% include search.html %}
