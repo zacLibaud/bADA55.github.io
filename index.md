@@ -58,6 +58,8 @@ This way, we’re not just guessing—we’ve got data to back it up! Is BeerAdv
 
 Whether you’re looking for a platform with happy vibes or a community that isn’t afraid to tell it like it is, this analysis might help you decide where you’ll feel most at home. Let’s see the way the experts express their taste for a beer !
 
+{% include_relative figs/sentiment_distribution_comparison.html %}
+
 {% include_relative figs/sentiment_comparison.html %}
 
 If you’re looking for a place full of positive energy and excitement, BeerAdvocate might just be your new home. A massive 91% of expert reviews on BeerAdvocate are positive. These reviewers are passionate about their beers and don’t hold back when it comes to sharing the love.
