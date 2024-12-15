@@ -58,6 +58,8 @@ This way, we’re not just guessing—we’ve got data to back it up! Is BeerAdv
 
 Whether you’re looking for a platform with happy vibes or a community that isn’t afraid to tell it like it is, this analysis might help you decide where you’ll feel most at home. Let’s see the way the experts express their taste for a beer !
 
+{% include_relative figs/sentiment_comparison.html %}
+
 # What kind of words do they use?
 
 Finally, we assess the richness of the language used in expert reviews. A well-crafted review often reflects the reviewer’s depth of knowledge and expertise. By examining the vocabulary used, we can gauge which platform fosters a more cultivated and constructive reviewing environment, helping users decide where to find reviews they can trust.
