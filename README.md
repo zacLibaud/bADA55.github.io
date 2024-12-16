@@ -19,7 +19,7 @@ The repository of the project can be found <a href="https://github.com/epfl-ada/
 - [Modern Times - Rise of Technology in Cinema](https://adacalypse.github.io/modern-times-ADA/), [repo](https://github.com/adacalypse/modern-times-ADA)
 - [Cheers to Change!](https://hadriensevel.github.io/vivalavada/), [repo](https://github.com/hadriensevel/vivalavada)
 - [Human vs AI: A Comparison of Human and LLM Wikispeedia Performance](https://drudilorenzo.github.io/ada-klech-data-story/), [repo](https://github.com/drudilorenzo/ada-klech-data-story)
-
+- [The Beer Mood Matcher](https://sites.google.com/view/beermatcher/?authuser=1), [repo](https://github.com/yagmurilba/ada-2023-project-adapowerup2023)
 
 # Beautiful Jekyll
 
