@@ -346,7 +346,7 @@ img {
   color: var(--hover-col);
 }
 
-/*.navbar-custom .avatar-container {
+.navbar-custom .avatar-container {
   position: absolute;
   left: 50%;
   width: 3.125rem;
@@ -383,46 +383,11 @@ img {
 
 .navbar-custom.top-nav-expanded .avatar-container {
   display: none;
-}*/
-
-.navbar-custom .avatar-container {
-  position: absolute;
-  left: 50%;
-  bottom: -1.5rem;
-  display: flex; /* Utilisation de Flexbox */
-  gap: 0.5rem; /* Espace entre les avatars */
-  transform: translateX(-50%); /* Centrage horizontal */
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-.navbar-custom.top-nav-short .avatar-container {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.navbar-custom .avatar-container .avatar-img-border {
-  width: 6.25rem; /* Ajustée pour deux avatars avec espace */
-  height: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
-}
-
-.navbar-custom .avatar-container .avatar-img {
-  width: 100%;
-  border-radius: 50%; /* Garder les avatars ronds */
-  display: block;
-}
-
-.navbar-custom.top-nav-expanded .avatar-container {
-  display: none;
 }
 
 
-/*@media (min-width: 1200px) {
+
+@media (min-width: 1200px) {
   .navbar-custom.top-nav-regular .avatar-container {
     width: 6.25rem;
     bottom: -1.9375rem;
@@ -440,26 +405,8 @@ img {
   .navbar-custom.top-nav-regular .avatar-container .avatar-img {
     width: 100%;
   }
-}*/
-@media (min-width: 1200px) {
-  .navbar-custom.top-nav-regular .avatar-container {
-    width: 12.5rem; /* 6.25rem pour chaque avatar côte à côte */
-    bottom: -1.9375rem; /* Positionnement vertical des avatars */
-  }
-
-  .navbar-custom.top-nav-regular .avatar-container .avatar-img-border {
-    width: 100%;
-    {% unless site.round-avatar == false %}
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    {% endunless %}
-  }
-
-  .navbar-custom.top-nav-regular .avatar-container .avatar-img {
-    width: 100%;
-  }
 }
+
 
 /* --- Footer --- */
 
