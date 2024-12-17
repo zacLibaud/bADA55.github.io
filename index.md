@@ -52,7 +52,17 @@ Next, we turn our attention to the users, the heart of any review platform. Not 
 
 # What language do they speak ?
 
-With the experts identified, we delve into their reviews to reveal the story they tell about each platform. We analyze their language to understand the regional and linguistic diversity of each platform’s community. This helps us answer questions like: Which platform has a more global reach? Is there a dominant language of discussion on one platform over the other?
+Now that we've established who these famous experts are, we're going to try and understand which languages they use in their reviews. The aim would be to differentiate our two platforms using this criterion.
+
+We used the fasttext library [ref] to analyse the language of our experts' reviews, and unfortunately we got the following results:
+
+[PRINT LES DEUX PIE CHARTS COTE A COTE DES LANGUES UTILISEES]
+
+No such luck... We won't be able to separate our two rivals like that. The vast majority of experts comment in English. On RateBeer, there is a slightly greater diversity of languages, with almost 1.5 million non-English speaking experts (just under 5%). On BeerAdvocate, on the other hand, there is no doubt that the experts speak English, with a few exceptions.
+
+More research is needed at this stage to find out whether the language used by the experts is also linked to a particular country. Where do English-speaking experts write their comments from? The United States? The United Kingdom? 
+
+In any case, what's certain is that we're going to keep the English-speaking experts for the rest of our research. In any case, these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision.
 
 # Which sentiment do they express the most?
 
