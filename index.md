@@ -17,7 +17,9 @@ To do this, we're going to present several interesting aspects of each of the tw
 
 Today's dilemma is between RateBeer and BeerAdvocate, two competing platforms, and you're here to make a choice. To give you an initial idea, here are some overall figures on these two rivals (obtained from data collected up to July 2017).
 
-{% include_relative figs/description.png %}
+<figure class="center">
+  <img src="./figs/description.jpg"> 
+</figure>
 
 # How ratings works ?
 
