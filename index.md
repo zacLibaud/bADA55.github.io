@@ -61,6 +61,8 @@ To address this, we analyzed user's to identify patterns that distinguish the mo
 The smallest but most influential group, these users are responsible for at least 50% of all reviews.
 We identified them by ranking users based on their review counts and summing their contributions until this threshold was reached.
 
+And the remaining user were divided into :
+
 **Intermediate:**
 The top 10% of remaining users, contributing significantly but not at the same scale as the Experts.
 
