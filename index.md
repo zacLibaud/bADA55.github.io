@@ -48,24 +48,40 @@ This distinction helps explain why the same beer may receive different scores ac
 
 # Who are the interesting users ?
 
-Next, we turn our attention to the users, the heart of any review platform. Not all reviewers are equal, and some can be considered experts. But what makes an expert? By identifying patterns in user behavior, we aim to determine which users contribute reviews that are more detailed, consistent, and insightful. These "experts" are essential for understanding which platform fosters a community of knowledgeable reviewers.
+At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These expert reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
 
-### Defining experience
-Experience isn't a single metric; it's a multifaceted concept. We can cite the number of reviews, the active period, the quality of the reviews and so much more. For this prior study, we interpreted "experience" as a combination of:
--	Total reviews: How prolific a user is.
--	Mean and standard deviation of time spacing: Indicators of regularity and variability in their reviews.
--	Style diversity: A measure of the willingness to try new beer styles
+By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings
+
+But what exactly makes a reviewer an expert? Is it their consistency, their diversity of tastes, or the sheer volume of reviews they write?
+
+To address this, we analyzed user behavior to identify patterns that distinguish the most valuable contributors.
+
+**Defining "Experience"**
+"Experience" is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
+
+- Total Reviews:
+The total number of reviews written by a user—measuring their overall contribution to the platform.
+
+- Consistency Over Time:
+Using the mean and standard deviation of time intervals between reviews, we capture both regularity and variability:
+A low standard deviation indicates steady, consistent reviewing behavior.
+A higher mean or large gaps between reviews suggests more sporadic contributions.
+
+- Style Diversity:
+The number of beer styles a user has reviewed, reflecting their willingness to explore different types of beers. Greater diversity often correlates with broader knowledge and a more experienced palate.
+
+By combining these three features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior.
 
 ### Clustering (KMeans)
-After processing the features, we can already observe some patterns by applying PCA (a dimension reduction algorithm). The optimal number of cluster is determined using the elbow method and silhouette scores :
 
-{% include_relative figs/nb_clusters_BA.html %}
-{% include_relative figs/nb_clusters_RB.html %}
+Finding the Clusters: Where Do the Experts Hide?
+To group users into meaningful categories, we turned to K-Means Clustering, a method that allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
 
-We have chosen to separate the users into 3 different experience levels : 
--	Beginners : with a low total of reviews
--	Intermediate : one side of the dense group with moderate activity
--	Experienced : the group we are interested in, with a high counts of reviews, low time spacings and a sufficient beer style diversity
+- The curious explorers who try a bit of everything, but don't post very often
+- The steady contributors who are reliable and consistent, and
+- The hardcore enthusiasts who live and breathe beer reviews.
+
+To figure out how many groups made the most sense, we used the elbow method, a technique that helps pinpoint the “sweet spot” for clustering. For both BeerAdvocate and RateBeer, the magic number turned out to be 3 clusters.
 
 {% include_relative figs/PCA_clustering_BA.html %}
 {% include_relative figs/PCA_clustering_RB.html %}
