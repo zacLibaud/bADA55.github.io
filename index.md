@@ -51,7 +51,7 @@ Surely this distinction isn't enough for you to make up your mind yet, but if yo
 
 At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These **expert** reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
 
-<img src="practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="500">
+<img src="figs/practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="500">
 
 By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings.
 
