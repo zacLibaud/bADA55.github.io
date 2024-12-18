@@ -51,16 +51,14 @@ Surely this distinction isn't enough for you to make up your mind yet, but if yo
 
 At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These **expert** reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
 
-<img src="figs/practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="500">
+<img src="figs/practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="400">
 
-By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings.
+By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings. But what exactly makes a reviewer an expert? Is it their consistency, their diversity of tastes, or the sheer volume of reviews they write?
 
-But what exactly makes a reviewer an expert? Is it their consistency, their diversity of tastes, or the sheer volume of reviews they write?
-
-To address this, we analyzed user's to identify patterns that distinguish the most valuable contributors. And one way to better understand the community is by categorizing users based on their review activity and experience. Here’s how we divided them:
+A first simple way to better understand the community is by categorizing users based on their review activity. Here’s how we divided them:
 
 **Experts:**
-The smallest but most influential group, these users are responsible for at least 50% of all reviews.
+The smallest but most influential group, these users are responsible for 50% of all reviews.
 We identified them by ranking users based on their review counts and summing their contributions until this threshold was reached.
 
 And the remaining user were divided into :
@@ -74,7 +72,7 @@ Representing the next 40%, these users are occasional contributors.
 **Debutants:**
 The bottom 50% of users, who are just starting out or have written very few reviews.
 
-Let's exactly see the proportion they all represent in terms of total users and also total reviews : 
+Let's exactly see the proportion they all represent in terms of total users and total reviews : 
 
 {% include_relative figs/fig_experts_selection.html %}
 
@@ -90,7 +88,7 @@ While everyone plays a role, this underscores just how crucial Experts are to th
 While this threshold-based grouping provides a straightforward categorization, it doesn’t capture the behavioral nuances of reviewers. To refine our analysis, and group users into meaningful categories, we turned to another method, called K-Means Clustering, that allows us to organize users based on three key dimensions of “experience”.
 
 **Defining "Experience"**
-"Experience" is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
+Experience is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
 
 - Total Reviews:
 The total number of reviews written by a user—measuring their overall contribution to the platform.
@@ -108,7 +106,7 @@ By combining these three features, we constructed a robust definition of "experi
 ### Clustering (KMeans)
 
 Finding the Clusters: Where Do the Experts Hide?
-To group users into meaningful categories, we turned to K-Means Clustering, a method that allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
+The method that allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
 
 - The curious explorers who try a bit of everything, but don't post very often
 - The steady contributors who are reliable and consistent, and
@@ -121,7 +119,6 @@ To figure out how many groups made the most sense, we used the elbow method, a t
 
 A deeper look at the features shows that the 3 experience levels are separated in a simple way, which makes us question the choice of clustering instead of using thresholds. 
 
-
 #### Next Steps
 Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
 
@@ -130,7 +127,7 @@ Given the significant influence of **Experts** on the review landscape, we will 
 
 Now that we've established who these famous experts are, we're going to try and understand which languages they use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
 
-We utilized the powerful fasttext library [ref] to analyse the language of our experts' reviews, and unfortunately we got the following results:
+We utilized the powerful fasttext library ([comparison of language detection models](https://modelpredict.com/language-identification-survey)) to analyse the language of our experts' reviews, and we got the following results:
 {% include_relative figs/proportion_reviews_comparison.html %}
 No such luck... We won't be able to separate our two rivals like that. The vast majority of experts comment in English. On RateBeer, there is a slightly greater diversity of languages, with almost 150'000 non-English reviews (just under 5% of the total number of reviews). On the second place we find german, then french and norvegian. On BeerAdvocate, on the other hand, there is no doubt that the experts speak English, with a few exceptions (we can't even see it on the graph). 
 
