@@ -45,11 +45,11 @@ However, significant differences emerge for **taste** and **overall**:
 If you’re all about the sensory details—flavor, the nuances of taste—this, BerrAdvocate is the platform for you. Reviewers here focus on the experience of the sip, making it a great choice if you want to explore beers from a flavor-first perspective.
 If you’re looking for a more well-rounded view, where the overall impression of a beer takes priority, RateBeer might be your go-to.
 
-Surely this distinction isn't enough for you to make up your mind yet, but if you're a professional dabbler I suspect it will have swayed you one way rather than the other. That's why we're going to try and differentiate the two platforms a little more by focusing on a very specific group of users: the experts! But who are actually the experts ?
+Surely this distinction isn't enough for you to make up your mind yet, but if you're a professional dabbler I suspect it will have swayed you one way rather than the other. That's why we're going to try and differentiate the two platforms a little more by focusing on a very specific group of users: the experts! You are now wondering, what do we mean by **experts**, let's start from the beginning...
 
 # Who are the interesting users ?
 
-At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These expert reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
+At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These **expert** reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
 
 By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings.
 
@@ -72,13 +72,18 @@ Representing the next 40%, these users are occasional contributors.
 **Debutants:**
 The bottom 50% of users, who are just starting out or have written very few reviews.
 
-Let's see the proportion they represent in terms of total users and also total reviews : 
+Let's exactly see the proportion they all represent in terms of total users and also total reviews : 
+
+{% include_relative figs/fig_experts_selection.html %}
 
 
 **The Power of Experts**:  
-On both platforms, the smallest group of users—**less than 2% of the community**—is responsible for **half of all reviews**. These are the dedicated contributors driving the content. And while 50% of users are classified as **Debutants**, their contributions barely register in the total review count (**1.53% on BeerAdvocate**, **0.59% on RateBeer**).  
+
+On both platforms, the smallest group of users—less than 2% of the community—stands out as the driving force, contributing an impressive 50% of all reviews. These are the dedicated reviewers, the ones who consistently share their insights and shape the platforms' content.
+
+On the other hand, 50% of users, classified as Debutants, are more reserved in their contributions, accounting for just 1.53% of reviews on BeerAdvocate and 0.59% on RateBeer.
    
-This stark imbalance underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
+While everyone plays a role, this underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
 
 
 
