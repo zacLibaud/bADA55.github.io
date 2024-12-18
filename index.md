@@ -83,7 +83,7 @@ On both platforms, the smallest group of users, less than 2% of the community, s
 
 On the other hand, 50% of users, classified as Debutants, are more reserved in their contributions, accounting for just 1.53% of reviews on BeerAdvocate and 0.59% on RateBeer.
    
-While everyone plays a role, this underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
+Even if everyone plays a role, this underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
 
 While this threshold-based grouping provides a straightforward categorization, it doesn’t capture the behavioral nuances of reviewers. To refine our analysis, and group users into meaningful categories, we turned to another method, called K-Means Clustering, that allows us to organize users based on three key dimensions of “experience”.
 
@@ -127,11 +127,11 @@ Given the significant influence of **Experts** on the review landscape, we will 
 
 Now that we've established who these famous experts are, we're going to try and understand which languages they use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
 
-We utilized the powerful fasttext library ([comparison of language detection models](https://modelpredict.com/language-identification-survey)) to analyse the language of our experts' reviews, and we got the following results:
+We utilized the powerful fastText library to analyze the language of our experts' reviews. We referred to this [comparison of language detection models](https://modelpredict.com/language-identification-survey) to evaluate various options. fastText stood out for its robust performance, ease of use, and the ability to handle large-scale data efficiently, making it an excellent choice for our analysis. Let's see the language of the experts reviews:
 {% include_relative figs/proportion_reviews_comparison.html %}
 No such luck... We won't be able to separate our two rivals like that. The vast majority of experts comment in English. On RateBeer, there is a slightly greater diversity of languages, with almost 150'000 non-English reviews (just under 5% of the total number of reviews). On the second place we find german, then french and norvegian. On BeerAdvocate, on the other hand, there is no doubt that the experts speak English, with a few exceptions (we can't even see it on the graph). 
 
-In any case, what's certain is that we're going to keep the English-speaking experts for the rest of our research. In any case, these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision.
+In any case, what's certain is that we're going to keep the English-speaking experts for the rest of our research. Anyway, these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision. Now that we have the expets
 
 # Which sentiment do they express the most?
 
