@@ -172,8 +172,8 @@ When you dive into expert reviews, you’ll quickly notice that words paint a pi
 To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds offer a quick and intuitive glimpse into the topics that matter most to BeerAdvocate and RateBeer communities. While it’s not as advanced as machine learning techniques (like Topic Modeling), it’s a perfect first step for spotting trends, patterns, and standout words.
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <div style="margin-right: 10px; text-align: center;">
-        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="1000">
+    <div style="margin-right: 1px; text-align: center;">
+        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="10000">
         <p style="margin-top: 5px;">BeerAdvocate Wordcloud</p>
     </div>
     <div style="text-align: center;">
