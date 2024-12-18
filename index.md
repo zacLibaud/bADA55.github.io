@@ -58,14 +58,18 @@ Experience isn't a single metric; it's a multifaceted concept. We can cite the n
 
 ### Clustering (KMeans)
 After processing the features, we can already observe some patterns by applying PCA (a dimension reduction algorithm). The optimal number of cluster is determined using the elbow method and silhouette scores :
+
 {% include_relative figs/nb_clusters_BA.html %}
 {% include_relative figs/nb_clusters_RB.html %}
+
 We have chosen to separate the users into 3 different experience levels : 
 -	Beginners : with a low total of reviews
 -	Intermediate : one side of the dense group with moderate activity
 -	Experienced : the group we are interested in, with a high counts of reviews, low time spacings and a sufficient beer style diversity
+
 {% include_relative figs/PCA_clustering_BA.html %}
 {% include_relative figs/PCA_clustering_RB.html %}
+
 A deeper look at the features shows that the 3 experience levels are separated in a simple way, which makes us question the choice of clustering instead of using thresholds. 
 
 ### Thresholds VS Clusters
@@ -75,12 +79,15 @@ We defined the thresholds as follows :
 -	style diversity >= 10
 -	mean spacing time < 30 days
 -	std spacing time < 360 days
+
 This approach created a list of 5982 experienced users for BA, all of whom are included in the previous BA experienced cluster (with length of 9601), and a list of 8010 experienced users for RB, 7989 (99,7%) of whom are common with the previous RB experienced cluster (with length of 9738).
 By applying identical thresholds to both users of both platforms, we can first perform an analysis between BeerAdvocate and RateBeer. By our definition of experience, RateBeer has more experienced users than BeerAdvocate, contrasting with the total number of user, which is way higher in BeerAdvocate. 
 
 Then, comparing the users' features between the 2 methods shows many similarities, which confirms the impirical definition of "experience" for a user.
+
 {% include_relative figs/feat_clustering.html %}
 {% include_relative figs/feat_thresholding.html %}
+
 We also note that using thresholds can be sufficient to produce similar results, while having more control over the criteria and using less computing power. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
 
 # What language do they speak ?
