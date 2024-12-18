@@ -92,7 +92,10 @@ While there are differences in tone, one thing is clear: both BeerAdvocate and R
 
 # What kind of words do they use?
 
-Finally, we assess the richness of the language used in expert reviews. A well-crafted review often reflects the reviewer’s depth of knowledge and expertise. By examining the vocabulary used, we can gauge which platform fosters a more cultivated and constructive reviewing environment, helping users decide where to find reviews they can trust.
+When you dive into expert reviews, you’ll quickly notice that words paint a picture. Whether it’s describing the aroma, the taste, or the visual appeal, reviewers use a rich vocabulary to capture their experience. But how can we identify the dominant themes in thousands of reviews without drowning in the details?
+
+To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds offer a quick and intuitive glimpse into the topics that matter most to BeerAdvocate and RateBeer communities. While it’s not as advanced as machine learning techniques (like Topic Modeling), it’s a perfect first step for spotting trends, patterns, and standout words.
+
 
 # The final choice
 
