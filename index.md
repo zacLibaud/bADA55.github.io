@@ -98,10 +98,10 @@ To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <div style="margin-right: 10px;">
-        <img src="ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="400">
+        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="400">
     </div>
     <div>
-        <img src="rb_wordcloud.png" alt="RateBeer Wordcloud" width="400">
+        <img src="figs/rb_wordcloud.png" alt="RateBeer Wordcloud" width="400">
     </div>
 </div>
 
