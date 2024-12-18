@@ -105,6 +105,10 @@ To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds
     </div>
 </div>
 
+The WordCloud suggests that the expert reviews from Beeraadvocate heavily emphasize taste and flavor as the primary evaluation criteria. They also oftne comment on the beer’s presentation (e.g., foam, color, and clarity) and highlight aromatic qualities as critical to the beer experience. Ratebeer also provides detailed descriptions of flavor and aroma, using terms that reflect both general and specific notes (e.g., bitter, sweet malt, tropical fruit). The users also pay careful attention to appearance and mouthfeel, as indicated by frequent comments on foam color, carbonation, and body. They highlight bitterness more prominently, which could reflect a common theme in the reviewed beers.
+
+When comparing the two word clouds, the second dataset appears to cover a greater variety of topics due to a more even distribution of words. However, these observations are limited by the naive nature of WordCloud, which does not distinguish context or semantic relationships between words.
+
 
 # The final choice
 
