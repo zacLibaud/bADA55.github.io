@@ -20,7 +20,7 @@ Our aim is to help you decide between the two rating platforms: **BeerAdvocate**
 Today's dilemma is between BeerAdvocate and RateBeer, two competing platforms, and you're here to make a choice. To give you an initial idea, here are some overall numbers on these two rivals (obtained from data collected up to July 2017).
 
 
-<img src="figs/description.png" style="display: block; margin: auto;" width="600">
+<img src="figs/barb_dessin.png" style="display: block; margin: auto;" width="600">
 
 
 Here’s already something interesting: while the number of users on BeerAdvocate and RateBeer is pretty close, the difference in activity is massive. Users on RateBeer are like turbo-charged reviewers, contributing three times more reviews than those on BeerAdvocate. It seems RateBeer users just can’t stop sharing their thoughts on every sip, while BeerAdvocate users might be taking their time, savoring the moment before hitting “post.” But before looking at this reviewers, let's first have a look at the rating system.
