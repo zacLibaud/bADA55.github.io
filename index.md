@@ -87,8 +87,7 @@ On the other hand, 50% of users, classified as Debutants, are more reserved in t
    
 While everyone plays a role, this underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
 
-
-
+While this threshold-based grouping provides a straightforward categorization, it doesn’t capture the behavioral nuances of reviewers. To refine our analysis, and group users into meaningful categories, we turned to another method, called K-Means Clustering, that allows us to organize users based on three key dimensions of “experience”.
 
 **Defining "Experience"**
 "Experience" is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
