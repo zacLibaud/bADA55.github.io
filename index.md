@@ -173,11 +173,11 @@ To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <div style="margin-right: 10px; text-align: center;">
-        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="800">
+        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="1000">
         <p style="margin-top: 5px;">BeerAdvocate Wordcloud</p>
     </div>
     <div style="text-align: center;">
-        <img src="figs/rb_wordcloud.png" alt="RateBeer Wordcloud" width="800">
+        <img src="figs/rb_wordcloud.png" alt="RateBeer Wordcloud" width="1000">
         <p style="margin-top: 5px;">RateBeer Wordcloud</p>
     </div>
 </div>
