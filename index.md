@@ -131,7 +131,7 @@ We utilized the powerful fastText library to analyze the language of our experts
 {% include_relative figs/proportion_reviews_comparison.html %}
 No such luck... We won't be able to separate our two rivals like that. The vast majority of experts comment in English. On RateBeer, there is a slightly greater diversity of languages, with almost 150'000 non-English reviews (just under 5% of the total number of reviews). On the second place we find german, then french and norvegian. On BeerAdvocate, on the other hand, there is no doubt that the experts speak English, with a few exceptions (we can't even see it on the graph). 
 
-In any case, what's certain is that we're going to keep the English-speaking experts for the rest of our research. Anyway, these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision. Now that we have the expets
+In any case, what's certain is that we're going to keep the English-speaking experts for the rest of our research. Moreover these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision. Now it's time to delve deeper into their reviews and uncover the valuable patterns and sentiments within their feedback.
 
 # Which sentiment do they express the most?
 
@@ -163,6 +163,8 @@ On the other hand, if you prefer reviews that are more critical, balanced, and t
 
 While there are differences in tone, one thing is clear: both BeerAdvocate and RateBeer tend to lean positive overall. Even on RateBeer, where reviews are a bit more critical, the majority—over 75%—of expert reviews still celebrate the beers they’re reviewing. So, while the vibe might feel different, there’s no shortage of appreciation for great beer on either platform.
 
+But enough about the vibe—let’s get into the nitty-gritty of what these experts are actually saying. Let’s crack open the reviews and take a closer look at the language that’s shaping the beer-loving world. Cheers to finding out!
+
 # What kind of words do they use?
 
 When you dive into expert reviews, you’ll quickly notice that words paint a picture. Whether it’s describing the aroma, the taste, or the visual appeal, reviewers use a rich vocabulary to capture their experience. But how can we identify the dominant themes in thousands of reviews without drowning in the details?
@@ -170,16 +172,18 @@ When you dive into expert reviews, you’ll quickly notice that words paint a pi
 To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds offer a quick and intuitive glimpse into the topics that matter most to BeerAdvocate and RateBeer communities. While it’s not as advanced as machine learning techniques (like Topic Modeling), it’s a perfect first step for spotting trends, patterns, and standout words.
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <div style="margin-right: 10px;">
-        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="600">
+    <div style="margin-right: 10px; text-align: center;">
+        <img src="figs/ba_wordcloud.png" alt="BeerAdvocate Wordcloud" width="800">
+        <p style="margin-top: 5px;">BeerAdvocate Wordcloud</p>
     </div>
-    <div>
-        <img src="figs/rb_wordcloud.png" alt="RateBeer Wordcloud" width="600">
+    <div style="text-align: center;">
+        <img src="figs/rb_wordcloud.png" alt="RateBeer Wordcloud" width="800">
+        <p style="margin-top: 5px;">RateBeer Wordcloud</p>
     </div>
 </div>
 
-BeerAdvocate reviewers are all about the taste and flavor—the heart and soul of any great beer experience. Words like "taste", "aroma", and "flavor" dominate, showing a clear focus on the sensory elements. But they don’t stop there—presentation also gets its fair share of attention, with frequent mentions of foam, color, and clarity. After all, a beer has to look as good as it tastes, right?
-On the other hand, RateBeer experts serve up a similarly detailed analysis of flavor and aroma, but with a broader palette of terms. You’ll find mentions of "bitter", "sweet malt", and even "tropical fruit", offering both general impressions and specific tasting notes. They’re equally observant about appearance and mouthfeel, commenting on foam color, carbonation, and the beer’s body with precision.
+BeerAdvocate reviewers are all about the taste and flavor—the heart and soul of any great beer experience. Words like "taste", "aroma", and "flavor" dominate, showing a clear focus on the sensory elements. But they don’t stop there, presentation also gets its fair share of attention, with frequent mentions of foam, color, and clarity. After all, a beer has to look as good as it tastes, right?
+On the other hand, RateBeer experts serve up a similarly detailed analysis of flavor and aroma, but with a broader palette of terms. You’ll find mentions of "bitter", "sweet malt", and even "tropical fruit", offering both general impressions and specific tasting notes. They’re equally observant about appearance and mouthfeel, commenting on foam color, carbonation, and the beer’s body with precision. 
 
 Of course, WordClouds are a bit like skimming the headlines—they show us which words pop up most often, but they don’t capture the context or the deeper connections between words. So while this quick visual dive gives us a snapshot of each platform’s style, there’s more to uncover beneath the surface. Stay tuned, because we’re taking this analysis up a notch with more sophisticated techniques that dig into the true themes of these reviews!
 
