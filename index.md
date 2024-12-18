@@ -42,7 +42,7 @@ However, significant differences emerge for **taste** and **overall**:
 - BeerAdvocate gives much greater weight to **taste** (40%) compared to RateBeer (20%), indicating that the perception of taste is crucial for high ratings on BeerAdvocate.  
 - Conversely, RateBeer assigns double the weight to **overall** (42%) than BeerAdvocate (20%), emphasizing a more general, holistic evaluation.
 
-If you’re all about the sensory details—flavor, the nuances of taste—this, BerrAdvocate is the platform for you. Reviewers here focus on the experience of the sip, making it a great choice if you want to explore beers from a flavor-first perspective.
+If you’re all about the sensory details—flavor, the nuances of taste—this, BeerAdvocate is the platform for you. Reviewers here focus on the experience of the sip, making it a great choice if you want to explore beers from a flavor-first perspective.
 If you’re looking for a more well-rounded view, where the overall impression of a beer takes priority, RateBeer might be your go-to.
 
 Surely this distinction isn't enough for you to make up your mind yet, but if you're a professional dabbler I suspect it will have swayed you one way rather than the other. That's why we're going to try and differentiate the two platforms a little more by focusing on a very specific group of users: the experts! You are now wondering, what do we mean by **experts**, let's start from the beginning...
@@ -50,6 +50,8 @@ Surely this distinction isn't enough for you to make up your mind yet, but if yo
 # Who are the interesting users ?
 
 At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These **expert** reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
+
+<img src="practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="500">
 
 By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings.
 
@@ -63,7 +65,7 @@ We identified them by ranking users based on their review counts and summing the
 
 And the remaining user were divided into :
 
-**Intermediate:**
+**Intermediates:**
 The top 10% of remaining users, contributing significantly but not at the same scale as the Experts.
 
 **Novices:**
@@ -79,7 +81,7 @@ Let's exactly see the proportion they all represent in terms of total users and 
 
 **The Power of Experts**:  
 
-On both platforms, the smallest group of users—less than 2% of the community—stands out as the driving force, contributing an impressive 50% of all reviews. These are the dedicated reviewers, the ones who consistently share their insights and shape the platforms' content.
+On both platforms, the smallest group of users, less than 2% of the community, stands out as the driving force, contributing an impressive 50% of all reviews. These are the dedicated reviewers, the ones who consistently share their insights and shape the platforms' content.
 
 On the other hand, 50% of users, classified as Debutants, are more reserved in their contributions, accounting for just 1.53% of reviews on BeerAdvocate and 0.59% on RateBeer.
    
