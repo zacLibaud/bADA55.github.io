@@ -145,9 +145,10 @@ To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds
     </div>
 </div>
 
-The WordCloud suggests that the expert reviews from Beeraadvocate heavily emphasize taste and flavor as the primary evaluation criteria. They also oftne comment on the beer’s presentation (e.g., foam, color, and clarity) and highlight aromatic qualities as critical to the beer experience. Ratebeer also provides detailed descriptions of flavor and aroma, using terms that reflect both general and specific notes (e.g., bitter, sweet malt, tropical fruit). The users also pay careful attention to appearance and mouthfeel, as indicated by frequent comments on foam color, carbonation, and body. They highlight bitterness more prominently, which could reflect a common theme in the reviewed beers.
+BeerAdvocate reviewers are all about the taste and flavor—the heart and soul of any great beer experience. Words like "taste", "aroma", and "flavor" dominate, showing a clear focus on the sensory elements. But they don’t stop there—presentation also gets its fair share of attention, with frequent mentions of foam, color, and clarity. After all, a beer has to look as good as it tastes, right?
+On the other hand, RateBeer experts serve up a similarly detailed analysis of flavor and aroma, but with a broader palette of terms. You’ll find mentions of "bitter", "sweet malt", and even "tropical fruit", offering both general impressions and specific tasting notes. They’re equally observant about appearance and mouthfeel, commenting on foam color, carbonation, and the beer’s body with precision.
 
-When comparing the two word clouds, the second dataset appears to cover a greater variety of topics due to a more even distribution of words. However, these observations are limited by the naive nature of WordCloud, which does not distinguish context or semantic relationships between words.
+Of course, WordClouds are a bit like skimming the headlines—they show us which words pop up most often, but they don’t capture the context or the deeper connections between words. So while this quick visual dive gives us a snapshot of each platform’s style, there’s more to uncover beneath the surface. Stay tuned, because we’re taking this analysis up a notch with more sophisticated techniques that dig into the true themes of these reviews!
 
 
 # The final choice
