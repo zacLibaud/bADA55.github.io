@@ -50,6 +50,39 @@ This distinction helps explain why the same beer may receive different scores ac
 
 Next, we turn our attention to the users, the heart of any review platform. Not all reviewers are equal, and some can be considered experts. But what makes an expert? By identifying patterns in user behavior, we aim to determine which users contribute reviews that are more detailed, consistent, and insightful. These "experts" are essential for understanding which platform fosters a community of knowledgeable reviewers.
 
+### Defining experience
+Experience isn't a single metric; it's a multifaceted concept. We can cite the number of reviews, the active period, the quality of the reviews and so much more. For this prior study, we interpreted "experience" as a combination of:
+-	Total reviews: How prolific a user is.
+-	Mean and standard deviation of time spacing: Indicators of regularity and variability in their reviews.
+-	Style diversity: A measure of the willingness to try new beer styles
+
+### Clustering (KMeans)
+After processing the features, we can already observe some patterns by applying PCA (a dimension reduction algorithm). The optimal number of cluster is determined using the elbow method and silhouette scores :
+{% include_relative figs/nb_clusters_BA.html %}
+{% include_relative figs/nb_clusters_RB.html %}
+We have chosen to separate the users into 3 different experience levels : 
+-	Beginners : with a low total of reviews
+-	Intermediate : one side of the dense group with moderate activity
+-	Experienced : the group we are interested in, with a high counts of reviews, low time spacings and a sufficient beer style diversity
+{% include_relative figs/PCA_clustering_BA.html %}
+{% include_relative figs/PCA_clustering_RB.html %}
+A deeper look at the features shows that the 3 experience levels are separated in a simple way, which makes us question the choice of clustering instead of using thresholds. 
+
+### Thresholds VS Clusters
+For comparison, we explored an alternative grouping method : thresholds. We tried to reproduce similar groups (experienced VS beginners/intermediate) by setting specific cutoff values for the features. 
+We defined the thresholds as follows :
+-	total reviews >= 50 
+-	style diversity >= 10
+-	mean spacing time < 30 days
+-	std spacing time < 360 days
+This approach created a list of 5982 experienced users for BA, all of whom are included in the previous BA experienced cluster (with length of 9601), and a list of 8010 experienced users for RB, 7989 (99,7%) of whom are common with the previous RB experienced cluster (with length of 9738).
+By applying identical thresholds to both users of both platforms, we can first perform an analysis between BeerAdvocate and RateBeer. By our definition of experience, RateBeer has more experienced users than BeerAdvocate, contrasting with the total number of user, which is way higher in BeerAdvocate. 
+
+Then, comparing the users' features between the 2 methods shows many similarities, which confirms the impirical definition of "experience" for a user.
+{% include_relative figs/feat_clustering.html %}
+{% include_relative figs/feat_thresholding.html %}
+We also note that using thresholds can be sufficient to produce similar results, while having more control over the criteria and using less computing power. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
+
 # What language do they speak ?
 
 Now that we've established who these famous experts are, we're going to try and understand which languages they use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
