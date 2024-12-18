@@ -89,22 +89,35 @@ To figure out how many groups made the most sense, we used the elbow method, a t
 A deeper look at the features shows that the 3 experience levels are separated in a simple way, which makes us question the choice of clustering instead of using thresholds. 
 
 ### Thresholds VS Clusters
-For comparison, we explored an alternative grouping method : thresholds. We tried to reproduce similar groups (experienced VS beginners/intermediate) by setting specific cutoff values for the features. 
-We defined the thresholds as follows :
--	total reviews >= 50 
--	style diversity >= 10
--	mean spacing time < 30 days
--	std spacing time < 360 days
+An other way to find groups of people based on experience, is as following. Users were categorized into four groups based on their review activity: **Experts**, **Intermediate**, **Novices**, and **Debutants**.  
 
-This approach created a list of 5982 experienced users for BA, all of whom are included in the previous BA experienced cluster (with length of 9601), and a list of 8010 experienced users for RB, 7989 (99,7%) of whom are common with the previous RB experienced cluster (with length of 9738).
-By applying identical thresholds to both users of both platforms, we can first perform an analysis between BeerAdvocate and RateBeer. By our definition of experience, RateBeer has more experienced users than BeerAdvocate, contrasting with the total number of user, which is way higher in BeerAdvocate. 
+- **Experts** were identified as the smallest group of users responsible for at least **50%** of the total reviews. This was done by sorting users by their review counts and iteratively summing their contributions until the threshold was met.  
+- The remaining users were divided into **Intermediate** (top 10%), **Novices** (next 40%), and **Debutants** (bottom 50%) based on their proportion of total reviews and user counts.  
 
-Then, comparing the users' features between the 2 methods shows many similarities, which confirms the impirical definition of "experience" for a user.
+This classification highlights the disparity in review contributions across different user groups.
 
-{% include_relative figs/feat_clustering.html %}
-{% include_relative figs/feat_thresholding.html %}
+{% include_relative figs/experts_selection_BA.html %}
+{% include_relative figs/experts_selection_RB.html %}
 
-We also note that using thresholds can be sufficient to produce similar results, while having more control over the criteria and using less computing power. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
+#### BeerAdvocate
+- **Experts**: 1.48% of users, 50.00% of reviews  
+- **Intermediate**: 8.52% of users, 37.15% of reviews  
+- **Novices**: 40.00% of users, 11.32% of reviews  
+- **Debutants**: 50.00% of users, 1.53% of reviews  
+
+#### RateBeer
+- **Experts**: 0.87% of users, 50.00% of reviews  
+- **Intermediate**: 9.13% of users, 44.53% of reviews  
+- **Novices**: 40.00% of users, 4.87% of reviews  
+- **Debutants**: 50.00% of users, 0.59% of reviews  
+
+#### Conclusion
+1. A small fraction of users (**Experts**) contribute around **50%** of reviews.  
+2. The majority of users (**Novices** and **Debutants**) contribute minimally despite representing over **90%** of the user base.  
+
+#### Next Steps
+Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
+
 
 # What language do they speak ?
 
