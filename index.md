@@ -42,21 +42,44 @@ However, significant differences emerge for **taste** and **overall**:
 - BeerAdvocate gives much greater weight to **taste** (40%) compared to RateBeer (20%), indicating that the perception of taste is crucial for high ratings on BeerAdvocate.  
 - Conversely, RateBeer assigns double the weight to **overall** (42%) than BeerAdvocate (20%), emphasizing a more general, holistic evaluation.
 
-### Implications:  
-- **BeerAdvocate** prioritizes sensory aspects like **taste**, making it key for achieving high ratings.  
-- **RateBeer** takes a broader approach, with the **overall** impression being the most critical factor.
+If you’re all about the sensory details—flavor, the nuances of taste—this, BerrAdvocate is the platform for you. Reviewers here focus on the experience of the sip, making it a great choice if you want to explore beers from a flavor-first perspective.
+If you’re looking for a more well-rounded view, where the overall impression of a beer takes priority, RateBeer might be your go-to.
 
-Surely this distinction isn't enough for you to make up your mind yet, but if you're a professional dabbler I suspect it will have swayed you one way rather than the other. That's why we're going to try and differentiate the two platforms a little more by focusing on a very specific group of users: the experts!
+Surely this distinction isn't enough for you to make up your mind yet, but if you're a professional dabbler I suspect it will have swayed you one way rather than the other. That's why we're going to try and differentiate the two platforms a little more by focusing on a very specific group of users: the experts! But who are actually the experts ?
 
 # Who are the interesting users ?
 
 At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These expert reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
 
-By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings
+By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings.
 
 But what exactly makes a reviewer an expert? Is it their consistency, their diversity of tastes, or the sheer volume of reviews they write?
 
-To address this, we analyzed user behavior to identify patterns that distinguish the most valuable contributors.
+To address this, we analyzed user's to identify patterns that distinguish the most valuable contributors. And one way to better understand the community is by categorizing users based on their review activity and experience. Here’s how we divided them:
+
+**Experts:**
+The smallest but most influential group, these users are responsible for at least 50% of all reviews.
+We identified them by ranking users based on their review counts and summing their contributions until this threshold was reached.
+
+**Intermediate:**
+The top 10% of remaining users, contributing significantly but not at the same scale as the Experts.
+
+**Novices:**
+Representing the next 40%, these users are occasional contributors.
+
+**Debutants:**
+The bottom 50% of users, who are just starting out or have written very few reviews.
+
+Let's see the proportion they represent in terms of total users and also total reviews : 
+
+
+**The Power of Experts**:  
+On both platforms, the smallest group of users—**less than 2% of the community**—is responsible for **half of all reviews**. These are the dedicated contributors driving the content. And while 50% of users are classified as **Debutants**, their contributions barely register in the total review count (**1.53% on BeerAdvocate**, **0.59% on RateBeer**).  
+   
+This stark imbalance underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
+
+
+
 
 **Defining "Experience"**
 "Experience" is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
@@ -90,32 +113,6 @@ To figure out how many groups made the most sense, we used the elbow method, a t
 
 A deeper look at the features shows that the 3 experience levels are separated in a simple way, which makes us question the choice of clustering instead of using thresholds. 
 
-### Thresholds VS Clusters
-An other way to find groups of people based on experience, is as following. Users were categorized into four groups based on their review activity: **Experts**, **Intermediate**, **Novices**, and **Debutants**.  
-
-- **Experts** were identified as the smallest group of users responsible for at least **50%** of the total reviews. This was done by sorting users by their review counts and iteratively summing their contributions until the threshold was met.  
-- The remaining users were divided into **Intermediate** (top 10%), **Novices** (next 40%), and **Debutants** (bottom 50%) based on their proportion of total reviews and user counts.  
-
-This classification highlights the disparity in review contributions across different user groups.
-
-{% include_relative figs/experts_selection_BA.html %}
-{% include_relative figs/experts_selection_RB.html %}
-
-#### BeerAdvocate
-- **Experts**: 1.48% of users, 50.00% of reviews  
-- **Intermediate**: 8.52% of users, 37.15% of reviews  
-- **Novices**: 40.00% of users, 11.32% of reviews  
-- **Debutants**: 50.00% of users, 1.53% of reviews  
-
-#### RateBeer
-- **Experts**: 0.87% of users, 50.00% of reviews  
-- **Intermediate**: 9.13% of users, 44.53% of reviews  
-- **Novices**: 40.00% of users, 4.87% of reviews  
-- **Debutants**: 50.00% of users, 0.59% of reviews  
-
-#### Conclusion
-1. A small fraction of users (**Experts**) contribute around **50%** of reviews.  
-2. The majority of users (**Novices** and **Debutants**) contribute minimally despite representing over **90%** of the user base.  
 
 #### Next Steps
 Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
