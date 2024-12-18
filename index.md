@@ -179,6 +179,112 @@ On the other hand, RateBeer experts serve up a similarly detailed analysis of fl
 
 Of course, WordClouds are a bit like skimming the headlines—they show us which words pop up most often, but they don’t capture the context or the deeper connections between words. So while this quick visual dive gives us a snapshot of each platform’s style, there’s more to uncover beneath the surface. Stay tuned, because we’re taking this analysis up a notch with more sophisticated techniques that dig into the true themes of these reviews!
 
+## **What Are the Experts Really Talking About?**
+
+We’ve already taken a **quick peek** at the words BeerAdvocate and RateBeer experts use with our **WordClouds**. That simple and intuitive approach gave us an overview of the vocabulary that stands out on both platforms—words like **“aroma”**, **“taste”**, and **“foam”** on BeerAdvocate, and mentions of **“citrus”**, **“hoppy”**, and **“tropical fruit”** on RateBeer.
+
+But WordClouds, as fun as they are, are just scratching the surface. They show us which words appear most frequently, but not **how these words connect** to each other or what **bigger themes** are hiding in the reviews.
+
+Now, let’s take this analysis **to the next level**.
+
+---
+
+### **Why Conduct Topic Modeling?**
+
+Choosing the right platform isn’t just about **vocabulary** or even **sentiment**—it’s about understanding the **themes** that dominate the reviews. What do BeerAdvocate and RateBeer communities **really care about**?  
+
+Are the experts more focused on:
+- The **sensory experience** of a beer—like its aroma, foam, or texture?  
+- **Modern craft trends**—like hazy IPAs, tropical flavors, or roasted stouts?  
+- Or do they explore the broader **drinking environment**, mentioning brewpubs, taps, and community experiences?  
+
+By conducting **Topic Modeling** with Latent Dirichlet Allocation (LDA), we can uncover these themes and pinpoint the **focus areas** of each platform. This deeper dive will give you the insights to decide which community aligns best with your **tastes and interests**.
+
+---
+
+### **What We Did**
+
+1. **Document Segmentation**:  
+   To make the analysis manageable, we split the reviews into **chunks** of about **50 sentences each**, treating them as smaller "documents."
+
+2. **Topic Detection with LDA**:  
+   We used **LDA Topic Modeling**, a machine learning technique that identifies clusters of words frequently used together. Each cluster (or **topic**) represents a **theme** found in the reviews.
+
+3. **Visualizing the Results**:  
+   - A **heatmap** shows the distribution of detected topics across BeerAdvocate and RateBeer.
+   - An interactive **PyLDAvis** plot allows us to explore the topics in greater detail and understand how they relate to each other.
+
+---
+
+### **Topic Distribution: BeerAdvocate vs RateBeer**
+
+The **heatmap** below reveals how the detected topics are distributed across the two platforms:  
+
+{% include_relative figs/topic_distribution_heatmap.html %}
+
+#### **What Does the Heatmap Reflect?**
+- **BeerAdvocate**:
+   - Topics **0**, **5**, and **6** dominate, showing a strong focus on **sensory details** like aroma, mouthfeel, and beer appearance.
+   - This suggests a **classic review style** where reviewers highlight the finer sensory characteristics of beer.
+
+- **RateBeer**:
+   - Topics are distributed more **evenly** across multiple themes, with significant presence in **Topics 1, 3, 4, 7, 8, and 9**.
+   - This diversity reflects a broader focus on **beer styles**, tasting notes, and even the drinking environment (e.g., brewpubs, taps).
+
+In essence, BeerAdvocate reviews are **more focused** and sensory-driven, while RateBeer reviews cover a **wider range** of beer-related experiences.
+
+---
+
+### **Interactive Exploration with PyLDAvis**
+
+Beyond the heatmap, the **PyLDAvis visualization** allows us to interactively explore the detected topics.  
+
+{% include_relative figs/lda_visualization.html %}
+
+#### **What PyLDAvis Tells Us:**
+1. **Intertopic Distance Map**:
+   - Each **circle** represents a topic, and the size of the circle indicates its **prevalence**.
+   - Topics that are **closer together** share similar words and themes. For example, Topics **1, 2, and 7** cluster together, suggesting a shared focus on sensory descriptions and tasting notes.
+   - Distinct topics (like **Topic 4**) are farther apart, reflecting unique and specialized themes.
+
+2. **Top-30 Most Salient Words**:
+   - On the right-hand side, you can see the **most important words** for each topic.
+   - For example, words like **“aroma”**, **“appearance”**, and **“glass”** dominate BeerAdvocate-heavy topics, while RateBeer topics feature words like **“citrus”**, **“hazy”**, and **“roasted”**, showcasing craft beer trends and variety.
+
+3. **Interactivity**:
+   - You can select a topic and explore its key terms to gain a deeper understanding of what the community focuses on.
+   - Adjust the **relevance slider** to fine-tune the importance of frequent vs. unique words.
+
+---
+
+### **Key Insights for New Users**
+
+The combination of the **heatmap** and **PyLDAvis** reveals clear differences between BeerAdvocate and RateBeer:
+
+| **Platform**       | **Key Themes**                                                                 |
+|---------------------|------------------------------------------------------------------------------|
+| **BeerAdvocate**    | Sensory details like aroma, appearance, and mouthfeel dominate.               |
+| **RateBeer**        | Diverse beer styles, modern trends (hazy, roasted), and drinking environments. |
+
+#### **Who Should Use BeerAdvocate?**
+- If you love **structured reviews** that celebrate sensory details—like aroma, foam, and taste—BeerAdvocate is your best fit.  
+- This platform is perfect for those who appreciate **traditional beer reviews** with detailed, aesthetic evaluations.
+
+#### **Who Should Use RateBeer?**
+- If you want to explore a **broader range of beer experiences**—including modern craft beer trends, niche styles, and discussions about drinking environments—RateBeer is the platform for you.  
+- It’s ideal for beer adventurers who enjoy diverse, critical, and trend-focused reviews.
+
+---
+
+### **Conclusion**
+
+Through **Topic Modeling**, we’ve uncovered the unique focus areas of BeerAdvocate and RateBeer:
+- **BeerAdvocate**: A platform for detailed, sensory-driven reviews.  
+- **RateBeer**: A hub for diversity, modern craft trends, and global beer experiences.
+
+So, which community matches your style? Whether you prefer the classic depth of BeerAdvocate or the exploratory spirit of RateBeer, the choice is yours. Cheers to discovering your next favorite platform! 🍻
+
+
 
 # The final choice
 
