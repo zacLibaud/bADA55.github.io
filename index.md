@@ -286,14 +286,15 @@ To complete this project, we have used various resources, which are listed here.
 
 - [[paper][B]] Gael Lederrey, Robert West, **When Sheep Shop: Measuring Herding Effects in Product Ratings with Natural Experiments**, EPFL.
 
+- [[website][14]][[repository][15]] ADA 2023 project **Modern Times: Rise of Technology in Cinema**
 
-
-- [[website][14]] Wikipedia **Timeline of Computer Animation**
-
-- [[image][G]] By Athanasius Kircher, Public Domain
+- [[website][16]][[repository][17]] ADA 2023 project **Human vs AI: A Comparison of Human and LLM Wikispeedia Performance**
 
 [A]: http://i.stanford.edu/~julian/pdfs/icdm2012.pdf
 [B]: https://dlab.epfl.ch/people/west/pub/Lederrey-West_WWW-18.pdf
 
-[14]: https://en.wikipedia.org/wiki/Timeline_of_computer_animation_in_film_and_television
-[G]: https://commons.wikimedia.org/w/index.php?curid=52666213
+[14]: https://adacalypse.github.io/modern-times-ADA/
+[15]: https://github.com/adacalypse/modern-times-ADA
+
+[16]: https://drudilorenzo.github.io/ada-klech-data-story/
+[17]: https://github.com/drudilorenzo/ada-klech-data-story
