@@ -46,9 +46,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0 auto; /* Center the content */
-  max-width: 90%; /* Set to 90% of the page width */
-  box-sizing: border-box; /* Ensure padding is included in width */
 }
 body > main {
   flex: 1;
