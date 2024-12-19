@@ -115,9 +115,9 @@ The method that allows us to organize users based on their review habits. Think 
 
 To figure out how many groups made the most sense, we used the elbow and silhouette method, a technique that helps pinpoint the “sweet spot” for clustering. For both BeerAdvocate and RateBeer, the magic number turned out to be 3 clusters.
 
-But how do you see these clusters? That’s where we added an extra step: we used a technique called Principal Component Analysis (PCA). Think of PCA as a way to create a “map” of the clusters by simplifying the data, making the differences between groups easier to visualize. This allowed us to clearly see how our three clusters stood apart—bringing the hidden patterns of beer expertise to light!
+But how do you see these clusters? That’s where we added an extra step: we used a technique called Principal Component Analysis (PCA). Think of PCA as a way to create a “map” of the clusters by simplifying the data, making the differences between groups easier to visualize. This allowed us to clearly see how our three clusters stood apart, bringing the hidden patterns of beer expertise to light!
 
-GRAPHE WILLIAM
+{% include_relative figs/pca.html %}
 
 Through clustering, distinct groups of users began to emerge, each with its own unique personality. This approach let us zero in on the true experts, uncovering their habits, consistency, and passion for beer reviews.
 
