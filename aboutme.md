@@ -8,7 +8,7 @@ subtitle: For the more curious
 
 We are bADA55 (read it as you can)! A team formed for the occasion, during a very cold winter semester in Lausanne, who present here their discoveries in the form of a story. Here's a little more about each member of the group.
 
-<img src="figs/the-breakast-club-brian-johnson.gif" style="display: block; margin: auto;" width="500">
+<img src="figs/the-breakfast-club-brian-johnson.gif" style="display: block; margin: auto;" width="500">
 
 **Zoé Monnard - The Robust Porter:**
 Zoé is our mainstay. She does an impressive job, always there to support the team. Like a porter, she's sturdy and reliable, and brings that dose of comfort that gives strength in hard times.
