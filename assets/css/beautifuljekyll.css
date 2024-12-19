@@ -29,7 +29,15 @@ layout: null
 html {
   font-size: 100%
 }
+                       
+.centered-figure { /*ENLEVER SI FONCTIONNE PAS*/
+  display: block;
+  margin: auto;
+  max-width: 400px; /* Ajustez la largeur selon vos besoins */
+}
 
+                       
+                       
 body {
   font-family: var(--body-font);
   font-size: 1.125rem;
