@@ -202,36 +202,13 @@ Of course, WordClouds are a bit like skimming the headlines—they show us which
 
 ## **From Words to Themes: Diving Deeper with Topic Modeling**
 
-Our journey into the language of expert reviews started with **WordClouds**, offering a snapshot of the vocabulary that dominates BeerAdvocate and RateBeer. While we saw **BeerAdvocate’s focus on sensory elements** like “taste,” “aroma,” and “foam” and **RateBeer’s broader vocabulary** with mentions of “citrus,” “tropical fruit,” and “brewpub,” this approach only scratches the surface.  
+WordClouds are like looking at a list of ingredients without knowing how they’re combined. They tell us what words are frequent but don’t reveal the deeper connections between those words or the larger themes they represent. For example: Are “aroma” and “hoppy” linked to discussions about IPAs? Does “brewpub” suggest a focus on drinking environments on RateBeer? What bigger stories emerge when we analyze the entire vocabulary in context?
 
-**Why WordClouds Aren’t Enough**  
-WordClouds are like looking at a list of ingredients without knowing how they’re combined. They tell us what words are frequent but don’t reveal **the deeper connections** between those words or the **larger themes** they represent.  
+To answer these questions, we need a method that doesn’t just count words but detects themes, clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in, a clever machine learning technique that dives into the text to uncover the hidden themes lurking within reviews. Think of it as finding the common threads that tie conversations together. Here’s the magic behind it:
 
-For example:
-- Are “aroma” and “hoppy” linked to discussions about IPAs?  
-- Does “brewpub” suggest a focus on drinking environments on RateBeer?  
-- What bigger stories emerge when we analyze the entire vocabulary in context?
+Every review tells a story: LDA sees each review as a mix of topics, and each topic as a blend of words that frequently appear together. Spotting patterns in the noise: By analyzing word co-occurrence across thousands of reviews, LDA groups similar words into distinct topics. Bringing themes to life: Each topic is revealed through its top words, giving us a window into what it’s all about.
 
-To answer these questions, we need a method that doesn’t just count words but **detects themes**—clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in.
-
----
-
-### **Why Topic Modeling with LDA?**
-
-**Latent Dirichlet Allocation (LDA)** is a machine learning technique that uncovers the **hidden themes** in text by grouping words that frequently appear together into topics. Each topic represents a distinct idea, and every review is assigned a mix of topics, showing what themes it contributes to.  
-
-Here’s how it works:
-1. **Documents and Words**: LDA treats each review as a mixture of topics and each topic as a mixture of words.  
-2. **Detecting Patterns**: It analyzes word co-occurrence across all reviews to group words into cohesive topics.
-3. **Output**: Each topic is defined by its **top words**, which help us understand what the topic represents.
-
-For our analysis, we chose to detect **10 topics** to capture a variety of themes without overcomplicating the results. This gives us a detailed yet manageable overview of what BeerAdvocate and RateBeer communities care about.
-
----
-
-### **Exploring the Topics**
-
-The interactive **PyLDAvis visualization** helps us explore the detected topics in detail.  
+For our analysis, we focused on uncovering 10 key topics—enough to capture the diversity of conversations without getting lost in the details. The result? A crystal-clear snapshot of what the BeerAdvocate and RateBeer communities are buzzing about. The interactive **PyLDAvis visualization** helps us explore the detected topics in detail.  
 
 {% include_relative figs/lda_visualization.html %}
 
