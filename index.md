@@ -122,7 +122,7 @@ AJOUTER GRAPHE DEROULANT
 
 Through clustering, distinct groups of users began to emerge, each with its own unique personality. This approach let us zero in on the true experts, uncovering their habits, consistency, and passion for beer reviews.
 
-But we’re not stopping there. To keep things interesting, we’re pitting this method against the simpler, threshold-based approach. The goal? To see if the experts we found with the threshold method are also pointed out by the clusering method or if clustering reveals hidden gems the threshold method might have missed.
+But we’re not stopping there. To keep things interesting, we’re pitting this method against the simpler, threshold-based approach. The goal? To see if the experts we found with the threshold method are also pointed out by the clusering method.
 
 |                                | BeerAdvocate | RateBeer  |
 |--------------------------------|--------------|-----------|
@@ -130,16 +130,16 @@ But we’re not stopping there. To keep things interesting, we’re pitting this
 | **Number of experienced users with Threshold method**  | 902          | 611       |
 | **Percentage of experienced users from Threshold in group from Clustering** | 100.00%      | 100.00%   |
 
+Good news, the experts highlighted by the first (threshold) method are also found by the clustering method. Actually, this is not so surprising... The threshold method focuses on identifying users with a high number of reviews, highlighting those who have consistently engaged with the platform over time, while clustering groups users based on other behavioral patterns, the number of reviews also being included in the features. 
 
-
+By taking the experts identified through the threshold method, we prioritize users whose contributions are quantifiable and whose knowledge is backed by substantial activity. Since they represent already 50% of the reviews, this refined subset serves as a sufficient and solid foundation and offers a focused lens for deeper analysis.
 
 #### Next Steps
-Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
-
+Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their contentquality.
 
 # What language do they speak ?
 
-Now that we've established who these famous experts are, we're going to try and understand which languages they use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
+Now we're going to try and understand which languages these famous experts use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
 
 We utilized the powerful fastText library to analyze the language of our experts' reviews. We referred to this [comparison of language detection models](https://modelpredict.com/language-identification-survey) to evaluate various options. fastText stood out for its robust performance, ease of use, and the ability to handle large-scale data efficiently, making it an excellent choice for our analysis. Let's see the language of the experts reviews:
 {% include_relative figs/proportion_reviews_comparison.html %}
