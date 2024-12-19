@@ -34,7 +34,7 @@ So, what’s really going on here? Our mission is to uncover the mechanics behin
 The topics considered in these ratings are as follows: **"appearance," "aroma," "palate," "taste," and "overall."** Concretely, the final rating is a weighted average of these topics' ratings. Our objective is to determine these weights.
 We used linear regression to figure out the weights for the topics, helping us see how much each one really matters. Here's what we found:
 
-{% include_relative figs/rating_coeff2.html %}
+{% include_relative figs/notation_system.html %}
 
 ### Analysis of BeerAdvocate and RateBeer Notation System
 
