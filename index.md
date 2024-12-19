@@ -27,7 +27,9 @@ Here’s already something interesting: while the number of users on BeerAdvocat
 
 # How ratings works ?
 
-The rating system is essential for understanding the scores given to a beer. Notably, the same overall rating on BeerAdvocate and RateBeer does not reflect identical scores across different topics. In theory, if a user provides the same scores and descriptions for a beer on both platforms, the final rating would still differ between the two sites. Our aim is therefore to understand what lies behind these two rating systems in order to understand which parameters are valued by each of the two platforms.
+Beer ratings aren’t as straightforward as they seem. A beer’s overall score on BeerAdvocate and RateBeer might look identical at first glance, but beneath the surface, the two platforms weigh things very differently. Even if a user gave the exact same scores and descriptions for a beer on both platforms, the final ratings could still come out differently.
+
+So, what’s really going on here? Our mission is to uncover the mechanics behind these two rating systems—digging into the parameters and priorities that each platform values most. By doing so, we aim to reveal what truly shapes a beer’s score on BeerAdvocate versus RateBeer.
 
 The topics considered in these ratings are as follows: **"appearance," "aroma," "palate," "taste," and "overall."** Concretely, the final rating is a weighted average of these topics' ratings. Our objective is to determine these weights.
 We find the following weight for the topics:
@@ -180,7 +182,7 @@ But enough about the vibe—let’s get into the nitty-gritty of what these expe
 
 When you dive into expert reviews, you’ll quickly notice that words paint a picture. Whether it’s describing the aroma, the taste, or the visual appeal, reviewers use a rich vocabulary to capture their experience. But how can we identify the dominant themes in thousands of reviews without drowning in the details?
 
-To begin, we’ve chosen a simple yet effective method: WordClouds. These clouds offer a quick and intuitive glimpse into the topics that matter most to BeerAdvocate and RateBeer communities. While it’s not as advanced as machine learning techniques (like Topic Modeling), it’s a perfect first step for spotting trends, patterns, and standout words.
+To begin, we’ve chosen a simple yet effective method: **WordClouds**. These clouds offer a quick and intuitive glimpse into the topics that matter most to BeerAdvocate and RateBeer communities. While it’s not as advanced as machine learning techniques (like Topic Modeling), it’s a perfect first step for spotting trends, patterns, and standout words.
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <div style="margin-right: 1px; text-align: center;">
@@ -200,7 +202,7 @@ Of course, WordClouds are a bit like skimming the headlines—they show us which
 
 <img src="figs/giphy.gif" style="display: block; margin: auto;" width="400">
 
-## **From Words to Themes: Diving Deeper with Topic Modeling**
+**From Words to Themes: Diving Deeper with Topic Modeling**
 
 We need a method that doesn’t just count words but detects themes, clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in, a clever machine learning technique that dives into the text to uncover the hidden themes lurking within reviews. Think of it as finding the common threads that tie conversations together. Here’s the magic behind it:
 
