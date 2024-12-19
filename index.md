@@ -131,7 +131,7 @@ But we’re not stopping there. To keep things interesting, we’re pitting this
 
 Good news, the experts highlighted by the first (threshold) method are also found by the clustering method!
 
-<img src="figs/gif_success.gif" style="display: block; margin: auto;" width="500">
+<img src="figs/gif_success.gif" style="display: block; margin: auto;" width="300">
 
 Actually, this is not so surprising... The threshold method focuses on identifying users with a high number of reviews, highlighting those who have consistently engaged with the platform over time, while clustering groups users based on other behavioral pattern, the number of reviews also being included in the features. And it seems that this one allows for a good separation.
 
@@ -186,7 +186,7 @@ But enough about the vibe, let’s get into the nitty-gritty of what these exper
 
 When you dive into expert reviews, you’ll quickly notice that words paint a picture. Whether it’s describing the aroma, the taste, or the visual appeal, reviewers use a rich vocabulary to capture their experience. But how can we identify the dominant themes in thousands of reviews without drowning in the details?
 
-<img src="figs/drowning_gif.gif" style="display: block; margin: auto;" width="500">
+<img src="figs/drowning_gif.gif" style="display: block; margin: auto;" width="400">
 
 To begin, we’ve chosen a simple yet effective method: **WordClouds**. These clouds offer a quick and intuitive glimpse into the topics that matter most to BeerAdvocate and RateBeer communities. While it’s not as advanced as machine learning techniques (like Topic Modeling), it’s a perfect first step for spotting trends, patterns, and standout words.
 
