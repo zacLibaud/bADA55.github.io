@@ -230,17 +230,16 @@ By analyzing the most important words for each topic, we interpreted their theme
 
 | **Topic** | **Top Words**                             | **What It Represents**                                                    |
 |-----------|-------------------------------------------|----------------------------------------------------------------------------|
-| **0**     | "aroma", "smell", "foam", "mouthfeel"     | Sensory elements: aroma, texture, and visual details.                     |
-| **1**     | "lager", "pale", "corn", "yellow"         | Light and simple beer styles, often lagers or pale ales.                  |
-| **2**     | "appearance", "lacing", "overall", "nose" | Structured beer ratings focused on visual and sensory impressions.        |
-| **3**     | "hazy", "grain", "citrus", "yellow"       | Modern craft beer styles, especially hazy pale ales or IPAs.              |
-| **4**     | "yeast", "spice", "banana", "citrus"      | Fruity and spicy beer styles, often Belgian or wheat beers.               |
-| **5**     | "glass", "lacing", "smell", "great"       | Traditional sensory reviews emphasizing appearance and aroma.             |
-| **6**     | "coffee", "roasted", "mouthfeel"          | Darker beer styles, such as stouts and porters, with coffee-like flavors. |
-| **7**     | "brewpub", "tap", "thank", "Beer Buddy"   | Drinking environments and RateBeer-specific community discussions.        |
-| **8**     | "Taste", "citrus", "roasted", "hazy"      | Complex flavor profiles, mixing citrus, roasted notes, and modern trends. |
-| **9**     | "flavour", "colour", "malty", "pale"      | A global lexicon focusing on flavors, colors, and traditional styles.     |
-
+| **0**     | "quot", "nose", "ale", "smell", "glass", "coffee", "lace", "brew", "leave", "mouthfeel" | Sensory elements: aroma, texture, and visual details.                     |
+| **1**     | "lager", "pale", "bad", "corn", "yellow", "nose", "drink", "gold", "pretty" | Light and simple beer styles, often lagers or pale ales.                  |
+| **2**     | "appearance", "amp", "ounce", "lacing", "nose", "smell", "mouthfeel", "overall" | Structured beer ratings focused on visual and sensory impressions.        |
+| **3**     | "small", "nose", "pale", "hazy", "yellow", "grain", "citrus" | Modern craft beer styles, especially hazy pale ales or IPAs.              |
+| **4**     | "yeast", "spice", "citrus", "wheat", "apple", "spicy", "banana"| Fruity and spicy beer styles, often Belgian or wheat beers.               |
+| **5**     | "smell", "glass", "lacing", "finger", "overall", "drink", "great", "mouthfeel"| Traditional sensory reviews emphasizing appearance and aroma.             |
+| **6**     |"coffee", "nose", "pretty", "feel", "mouth", "great" | Darker beer styles, such as stouts and porters, with coffee-like flavors. |
+| **7**     |"smell", "brewpub", "tap", "rate", "thank", "Beer Buddy", "rate_Beer"| Drinking environments and RateBeer-specific community discussions.        |
+| **8**     | "Taste", "Aroma", "coffee", "citrus", "roasted", "hazy", "Bottle"| Complex flavor profiles, mixing citrus, roasted notes, and modern trends. |
+| **9**     | "flavour", "colour", "malty", "Bottle", "hoppy", "yellow", "pale"| A global lexicon focusing on flavors, colors, and traditional styles.     |
 
 To uncover how these topics resonate within each platform, we turned to a heatmap, a vibrant snapshot of topic prevalence. This visualization reveals where BeerAdvocate and RateBeer overlap, diverge, or spotlight entirely different themes.
 
