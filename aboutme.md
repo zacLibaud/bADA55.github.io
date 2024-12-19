@@ -28,7 +28,9 @@ Always ready to test a new method, Pierre is like an experimental saison beer: i
 
 {% include_relative figs/fig_experts_selection.html %}
 
-<img src="figs/practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="400">
+<div style="width: 400px; margin: auto;">
+  {% include_relative figs/fig_experts_selection.html %}
+</div>
 
 
 
