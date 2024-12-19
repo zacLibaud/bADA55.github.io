@@ -9,7 +9,7 @@ use-site-title: true
 ---
 
 # Introduction
-It's not uncommon to have to choose between two similar items, whether it's between two books in a bookshop, two different telephones or even between two restaurants on Google. In these situations, we're very happy to find in-store advisers or online reviews (maybe both for the more methodical) to help us make the final choice. But it's much less common to seek advice on choosing between two rating platforms or application on the internet. Perhaps you could ask friends who use them, but if you're not so lucky or if you just want to check what they say, we're offering to be that friend today! 
+It's not uncommon to have to choose between two similar items, whether it's between two books in a bookshop, two different telephones or even between two restaurants on Google. In these situations, we're very happy to find in-store advisers or online reviews to help us make the final choice. But it's much less common to seek advice on choosing between two rating platforms or application on the internet. Perhaps you could ask friends who use them, but if you're not so lucky or if you just want to check what they say, we're offering to be that friend today! 
 
 <img src="figs/high_five.gif" style="display: block; margin: auto;" width="500">
 
@@ -32,7 +32,7 @@ Beer ratings aren’t as straightforward as they seem. A beer’s overall score 
 So, what’s really going on here? Our mission is to uncover the mechanics behind these two rating systems, digging into the parameters and priorities that each platform values most. By doing so, we aim to reveal what truly shapes a beer’s score on BeerAdvocate versus RateBeer.
 
 The topics considered in these ratings are as follows: **"appearance," "aroma," "palate," "taste," and "overall."** Concretely, the final rating is a weighted average of these topics' ratings. Our objective is to determine these weights.
-We find the following weight for the topics:
+We used linear regression to figure out the weights for the topics, helping us see how much each one really matters. Here's what we found:
 
 {% include_relative figs/rating_coeff2.html %}
 
@@ -96,7 +96,7 @@ While this threshold-based grouping provides a straightforward categorization, i
 **Experience** is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
 
 - **Total Reviews**:
-The total number of reviews written by a user—measuring their overall contribution to the platform.
+The total number of reviews written by a user, measuring their overall contribution to the platform.
 
 - **Consistency Over Time**:
 Using the mean and standard deviation of time intervals between reviews, we capture both regularity and variability:
@@ -106,8 +106,8 @@ A higher mean or large gaps between reviews suggests more sporadic contributions
 - **Style Diversity**:
 The number of beer styles a user has reviewed, reflecting their willingness to explore different types of beers. Greater diversity often correlates with broader knowledge and a more experienced palate.
 
-By combining these features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior. Where do experts hide ? Let's find the clusters.
-The method that allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
+By combining these features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior. So where do experts hide ? Let's find the clusters.
+This second method allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
 
 - The curious explorers who try a bit of everything, but don't post very often
 - The steady contributors who are reliable and consistent, and
@@ -146,7 +146,7 @@ We utilized the powerful fastText library to analyze the language of our experts
 {% include_relative figs/proportion_reviews_comparison.html %}
 No such luck... We won't be able to separate our two rivals like that. The vast majority of experts comment in English. On RateBeer, there is a slightly greater diversity of languages, with almost 150'000 non-English reviews (just under 5% of the total number of reviews). On the second place we find german, then french and norvegian. On BeerAdvocate, on the other hand, there is no doubt that the experts speak English, with a few exceptions (we can't even see it on the graph). 
 
-In any case, what's certain is that we're going to keep the English-speaking experts for the rest of our research. Moreover these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision. Now it's time to delve deeper into their reviews and uncover the valuable patterns and sentiments within their feedback.
+In any case, what's certain is that we're going to keep the **English-speaking experts** for the rest of our research. Moreover these days, English is increasingly spoken and understood. If you're reading this article, I'm sure you'll at least agree with this decision. Now it's time to delve deeper into their reviews and uncover the valuable patterns and sentiments within their feedback.
 
 # Which sentiment do they express the most?
 
@@ -166,7 +166,7 @@ It seems that both platforms have a similar mix of positive, negative, and neutr
 
 For example, a review like “The beer has a smooth texture and a pleasant taste” might score high on neutrality due to its descriptive language but still reflect positivity because of words like “smooth” and “pleasant”. On the flip side, a review such as “The beer lacks flavor and is quite bland” could also show neutrality in tone but carry a negative sentiment because of words like “lacks” and “bland”.
 
-This nuanced balance of sentiment shows that reviewers on both platforms aren’t just cheerleaders or critics, they’re detailed and expressive, capturing the good, the bad, and everything in between. But now, let's have a look at the overall sentiment of experts reviews.
+This nuanced balance of sentiment shows that reviewers on both platforms aren’t just cheerleaders or critics, they’re detailed and expressive, capturing the good, the bad, and everything in between. But now, let's have a look at the overall sentiment of experts reviews. This is done by classifying the review as positive, negative or neutral based on its compound score. It's like the ultimate vibe check for the review's text, it’s a single, all-encompassing score that sums up the balance of positive, negative, and neutral feels.
 
 {% include_relative figs/sentiment_comparison.html %}
 
