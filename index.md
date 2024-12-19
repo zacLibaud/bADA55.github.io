@@ -87,7 +87,6 @@ Even if everyone plays a role, this underscores just how crucial Experts are to 
 
 While this threshold-based grouping provides a straightforward categorization, it doesn’t capture the behavioral nuances of reviewers. To refine our analysis, and group users into meaningful categories, we turned to another method, called K-Means Clustering, that allows us to organize users based on three key dimensions of “experience”.
 
-**Defining "Experience"**
 Experience is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
 
 - Total Reviews:
@@ -101,23 +100,34 @@ A higher mean or large gaps between reviews suggests more sporadic contributions
 - Style Diversity:
 The number of beer styles a user has reviewed, reflecting their willingness to explore different types of beers. Greater diversity often correlates with broader knowledge and a more experienced palate.
 
-By combining these three features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior.
+By combining these features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior.
 
 ### Clustering (KMeans)
 
-Finding the Clusters: Where Do the Experts Hide?
+Where do experts hide ? Let's find the clusters.
 The method that allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
 
 - The curious explorers who try a bit of everything, but don't post very often
 - The steady contributors who are reliable and consistent, and
 - The hardcore enthusiasts who live and breathe beer reviews.
 
-To figure out how many groups made the most sense, we used the elbow method, a technique that helps pinpoint the “sweet spot” for clustering. For both BeerAdvocate and RateBeer, the magic number turned out to be 3 clusters.
+To figure out how many groups made the most sense, we used the elbow and silhouette method, a technique that helps pinpoint the “sweet spot” for clustering. For both BeerAdvocate and RateBeer, the magic number turned out to be 3 clusters.
+
+But how do you see these clusters? That’s where we added an extra step: we used a technique called Principal Component Analysis (PCA). Think of PCA as a way to create a “map” of the clusters by simplifying the data, making the differences between groups easier to visualize. This allowed us to clearly see how our three clusters stood apart—bringing the hidden patterns of beer expertise to light!
+
+AJOUTER GRAPHE DEROULANT
 
 {% include_relative figs/PCA_clustering_BA.html %}
 {% include_relative figs/PCA_clustering_RB.html %}
 
-A deeper look at the features shows that the 3 experience levels are separated in a simple way, which makes us question the choice of clustering instead of using thresholds. 
+
+
+|                                | BeerAdvocate | RateBeer  |
+|--------------------------------|--------------|-----------|
+| **Number of experienced users with Clustering method** | 8396         | 8652      |
+| **Number of experienced users with Threshold method**  | 902          | 611       |
+| **Percentage of experienced users from Threshold in group from Clustering** | 100.00%      | 100.00%   |
+
 
 #### Next Steps
 Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality. And as expected, the main criteria to define experience of a user is its number of reviews. Thus, this is the feature that will be used for the next part.
