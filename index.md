@@ -61,19 +61,19 @@ By shining a spotlight on these top contributors, we’re laying the groundwork 
 
 A first simple way to better understand the community is by categorizing users based on their review activity. Here’s how we divided them:
 
-**Experts:**
+- **Experts:**
 The smallest but most influential group, these users are responsible for 50% of all reviews.
 We identified them by ranking users based on their review counts and summing their contributions until this threshold was reached.
 
 And the remaining user were divided into :
 
-**Intermediates:**
+- **Intermediates:**
 The top 10% of remaining users, contributing significantly but not at the same scale as the Experts.
 
-**Novices:**
+- **Novices:**
 Representing the next 40%, these users are occasional contributors.
 
-**Debutants:**
+- **Debutants:**
 The bottom 50% of users, who are just starting out or have written very few reviews.
 
 Let's exactly see the proportion they all represent in terms of total users and total reviews : 
