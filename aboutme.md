@@ -8,7 +8,7 @@ subtitle: For the more curious
 
 We are bADA55 (read it as you can)! A team formed for the occasion, during a very cold winter semester in Lausanne, who present here their discoveries in the form of a story. Here's a little more about each member of the group.
 
-**Zoé Monnard - The Porter Costaude:**
+**Zoé Monnard - The Robust Porter:**
 Zoé is our mainstay. She does an impressive job, always there to support the team. Like a porter, she's sturdy and reliable, and brings that dose of comfort that gives strength in hard times.
 
 **Francois Goybet - The Barleywine:**
@@ -22,5 +22,7 @@ William, our clustering pro, likes to push the boundaries. Like a triple IPA, he
 
 **Pierre Tessier - The Experimental Season:**
 Always ready to test a new method, Pierre is like an experimental saison beer: innovative, full of surprises, and always looking for the next big idea. He's the perfect embodiment of the spirit of exploration and adaptability.
+
+
 
 
