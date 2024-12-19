@@ -214,7 +214,7 @@ For our analysis, we focused on uncovering 10 key topics, enough to capture the 
 
 Each circle represents a topic, and its size shows how important that topic is. The distance between the circles tells a fascinating story: the farther apart two topics are, the more distinct their themes. Take Topic 4 and Topic 9, for instance, they live in completely different worlds of beer talk.
 
-On the right, you’ll find the key words that bring each topic to life. For example, Topic 0 dives into sensory experiences with words like “aroma” and “mouthfeel.”Topic 4 paints a picture of fruity and spicy flavors with words like “citrus”, “spice”, and “banana.”
+On the right, you’ll find the key words that bring each topic to life. For example, Topic 0 dives into sensory experiences with words like “aroma” and “mouthfeel.” Topic 4 paints a picture of fruity and spicy flavors with words like “citrus”, “spice”, and “banana.”
 This interactive visualization proves one thing: the topics detected by LDA are clear and distinct, without excessive overlap. They represent unique perspectives within the beer enthusiast community.
 
 By analyzing the most important words for each topic, we interpreted their themes as follows:
@@ -242,6 +242,7 @@ The heatmap reveals fascinating differences in how BeerAdvocate and RateBeer app
 **BeerAdvocate:**
 Shines brightest in Topics 0, 5, and 6, diving deep into sensory details, traditional beer characteristics, and darker styles.
 Its concentrated focus suggests a laser-sharp dedication to classic beer reviews and tasting nuances.
+
 **RateBeer:**
 Spreads its voice across Topics 1, 3, 4, 7, 8, and 9, exploring modern craft trends, unique drinking experiences, and global influences.
 This broader reach paints a picture of diverse interests and a more adventurous audience.
@@ -263,6 +264,8 @@ Cheers to finding the community that matches your beer journey! 🍻
 
 
 # The final choice
+
+<img src="figs/ted-lasso-tv-show.gif" style="display: block; margin: auto;" width="400">
 
 Together, these analyses form a comprehensive picture of what each platform offers, allowing beer enthusiasts to make informed decisions about which platform best suits their needs. Whether you value detailed evaluations, insightful reviewers, or a vibrant and diverse community, this project aims to guide you to the right choice.
 
