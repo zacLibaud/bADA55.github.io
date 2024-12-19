@@ -29,7 +29,7 @@ Here’s already something interesting: while the number of users on BeerAdvocat
 
 Beer ratings aren’t as straightforward as they seem. A beer’s overall score on BeerAdvocate and RateBeer might look identical at first glance, but beneath the surface, the two platforms weigh things very differently. Even if a user gave the exact same scores and descriptions for a beer on both platforms, the final ratings could still come out differently.
 
-So, what’s really going on here? Our mission is to uncover the mechanics behind these two rating systems—digging into the parameters and priorities that each platform values most. By doing so, we aim to reveal what truly shapes a beer’s score on BeerAdvocate versus RateBeer.
+So, what’s really going on here? Our mission is to uncover the mechanics behind these two rating systems, digging into the parameters and priorities that each platform values most. By doing so, we aim to reveal what truly shapes a beer’s score on BeerAdvocate versus RateBeer.
 
 The topics considered in these ratings are as follows: **"appearance," "aroma," "palate," "taste," and "overall."** Concretely, the final rating is a weighted average of these topics' ratings. Our objective is to determine these weights.
 We find the following weight for the topics:
@@ -44,18 +44,20 @@ However, significant differences emerge for **taste** and **overall**:
 - BeerAdvocate gives much greater weight to **taste** (40%) compared to RateBeer (20%), indicating that the perception of taste is crucial for high ratings on BeerAdvocate.  
 - Conversely, RateBeer assigns double the weight to **overall** (42%) than BeerAdvocate (20%), emphasizing a more general, holistic evaluation.
 
-If you’re all about the sensory details—flavor, the nuances of taste—this, BeerAdvocate is the platform for you. Reviewers here focus on the experience of the sip, making it a great choice if you want to explore beers from a flavor-first perspective.
+If you’re all about the sensory details—flavor, the nuances of taste, BeerAdvocate is the platform for you. Reviewers here focus on the experience of the sip, making it a great choice if you want to explore beers from a flavor-first perspective.
 If you’re looking for a more well-rounded view, where the overall impression of a beer takes priority, RateBeer might be your go-to.
 
 Surely this distinction isn't enough for you to make up your mind yet, but if you're a professional dabbler I suspect it will have swayed you one way rather than the other. That's why we're going to try and differentiate the two platforms a little more by focusing on a very specific group of users: the experts! You are now wondering, what do we mean by **experts**, let's start from the beginning...
 
 # Who are the interesting users ?
 
-At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers—those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros—those who know their hops from their malts and can turn a sip into a story. These **expert** reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
+At the heart of every review platform lies its users. Some casually share their thoughts from time to time, while others stand out as experienced reviewers, those who provide detailed, consistent, and insightful contributions. Not all reviews are created equal. The true gems come from the seasoned pros, those who know their hops from their malts and can turn a sip into a story. These **expert** reviewers don’t just share opinions; they provide reliable, detailed, and insightful takes that cut through the noise.
 
 <img src="figs/practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="400">
 
 By shining a spotlight on these top contributors, we’re laying the groundwork for a deeper dive later on, where we’ll analyze their reviews in detail. Understanding who these experts are is key to unlocking the true strengths of BeerAdvocate and RateBeer, giving us a richer, clearer picture of each platform’s review quality and the community behind the ratings. But what exactly makes a reviewer an expert? Is it their consistency, their diversity of tastes, or the sheer volume of reviews they write?
+
+### Treshold on review number
 
 A first simple way to better understand the community is by categorizing users based on their review activity. Here’s how we divided them:
 
@@ -85,9 +87,11 @@ On both platforms, the smallest group of users, less than 2% of the community, s
 
 On the other hand, 50% of users, classified as Debutants, are more reserved in their contributions, accounting for just 1.53% of reviews on BeerAdvocate and 0.59% on RateBeer.
    
-Even if everyone plays a role, this underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute—they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
+Even if everyone plays a role, this underscores just how crucial Experts are to the lifeblood of these platforms. These power users don’t just contribute, they define the very essence of the community. Without their dedication and relentless passion, the rich tapestry of reviews and insights would be a shadow of what it is today. 
 
 While this threshold-based grouping provides a straightforward categorization, it doesn’t capture the behavioral nuances of reviewers. To refine our analysis, and group users into meaningful categories, we turned to another method, called K-Means Clustering, that allows us to organize users based on three key dimensions of “experience”.
+
+### Clustering (KMeans)
 
 **Experience** is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
 
@@ -102,11 +106,7 @@ A higher mean or large gaps between reviews suggests more sporadic contributions
 - Style Diversity:
 The number of beer styles a user has reviewed, reflecting their willingness to explore different types of beers. Greater diversity often correlates with broader knowledge and a more experienced palate.
 
-By combining these features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior.
-
-### Clustering (KMeans)
-
-Where do experts hide ? Let's find the clusters.
+By combining these features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior. Where do experts hide ? Let's find the clusters.
 The method that allows us to organize users based on their review habits. Think of it like sorting beer drinkers into categories:
 
 - The curious explorers who try a bit of everything, but don't post very often
@@ -129,7 +129,7 @@ But we’re not stopping there. To keep things interesting, we’re pitting this
 | **Number of experienced users with Threshold method**  | 902          | 611       |
 | **Percentage of experienced users from Threshold in group from Clustering** | 100.00%      | 100.00%   |
 
-Good news, the experts highlighted by the first (threshold) method are also found by the clustering method. Actually, this is not so surprising... The threshold method focuses on identifying users with a high number of reviews, highlighting those who have consistently engaged with the platform over time, while clustering groups users based on other behavioral patterns, the number of reviews also being included in the features. 
+Good news, the experts highlighted by the first (threshold) method are also found by the clustering method. Actually, this is not so surprising... The threshold method focuses on identifying users with a high number of reviews, highlighting those who have consistently engaged with the platform over time, while clustering groups users based on other behavioral pattern, the number of reviews also being included in the features. And it seems that this one allows for a good separation.
 
 By taking the experts identified through the threshold method, we prioritize users whose contributions are quantifiable and whose knowledge is backed by substantial activity. Since they represent already 50% of the reviews, this refined subset serves as a sufficient and solid foundation and offers a focused lens for deeper analysis.
 
@@ -152,7 +152,7 @@ Let’s be honest, when you’re choosing a platform, it’s not just about the 
 
 To get a feel for the mood on BeerAdvocate and RateBeer, we decided to dive into the reviews of the experts and do a little detective work. Using something called sentiment analysis (basically, a fancy way of figuring out if people are being positive, negative, or neutral), we analyzed the expert's reviews to uncover the overall tone.
 
-This way, we’re not just guessing—we’ve got data to back it up! Is BeerAdvocate full of passionate beer lovers who rave about every sip? Are RateBeer users more critical and straight to the point? Or is it a mix of everything?
+This way, we’re not just guessing, we’ve got data to back it up! Is BeerAdvocate full of passionate beer lovers who rave about every sip? Are RateBeer users more critical and straight to the point? Or is it a mix of everything?
 
 Whether you’re looking for a platform with happy vibes or a community that isn’t afraid to tell it like it is, this analysis might help you decide where you’ll feel most at home. Let’s see the way the experts express their taste for a beer !
 
@@ -164,19 +164,19 @@ It seems that both platforms have a similar mix of positive, negative, and neutr
 
 For example, a review like “The beer has a smooth texture and a pleasant taste” might score high on neutrality due to its descriptive language but still reflect positivity because of words like “smooth” and “pleasant”. On the flip side, a review such as “The beer lacks flavor and is quite bland” could also show neutrality in tone but carry a negative sentiment because of words like “lacks” and “bland”.
 
-This nuanced balance of sentiment shows that reviewers on both platforms aren’t just cheerleaders or critics—they’re detailed and expressive, capturing the good, the bad, and everything in between. But now, let's have a look at the overall sentiment of experts reviews.
+This nuanced balance of sentiment shows that reviewers on both platforms aren’t just cheerleaders or critics, they’re detailed and expressive, capturing the good, the bad, and everything in between. But now, let's have a look at the overall sentiment of experts reviews.
 
 {% include_relative figs/sentiment_comparison.html %}
 
 If you’re looking for a place full of positive energy and excitement, BeerAdvocate might just be your new home. A massive 91% of expert reviews on BeerAdvocate are positive. These reviewers are passionate about their beers and don’t hold back when it comes to sharing the love.
 
-Negative reviews? They’re rare here—only 7.54% of reviews express dissatisfaction. And as for neutrality? Forget it. Just 1.43% of reviews sit on the fence. The BeerAdvocate community loves to share their opinions, and those opinions are overwhelmingly upbeat. So, if you’re the kind of person who enjoys reading reviews that make you excited to grab your next pint, BeerAdvocate is where the vibe is all about celebrating great beer.
+Negative reviews? They’re rare here, only 7.54% of reviews express dissatisfaction. And as for neutrality? Forget it. Just 1.43% of reviews sit on the fence. The BeerAdvocate community loves to share their opinions, and those opinions are overwhelmingly upbeat. So, if you’re the kind of person who enjoys reading reviews that make you excited to grab your next pint, BeerAdvocate is where the vibe is all about celebrating great beer.
 
-On the other hand, if you prefer reviews that are more critical, balanced, and to the point, RateBeer might feel like a better fit. Here, 75.3% of reviews are positive—still a majority, but far less than BeerAdvocate. That means RateBeer experts aren’t afraid to share what didn’t impress them. In fact, 15.5% of reviews are negative, making this platform twice as likely to feature critical feedback. And for those who value objectivity, 9.15% of reviews are neutral—far more than you’ll find on BeerAdvocate. RateBeer has a vibe that’s more serious and straightforward. It’s a space for beer lovers who appreciate a more discerning perspective. If you’re looking for honesty and detail, even when it’s not all glowing praise, you’ll likely feel right at home here.
+On the other hand, if you prefer reviews that are more critical, balanced, and to the point, RateBeer might feel like a better fit. Here, 75.3% of reviews are positive, still a majority, but far less than BeerAdvocate. That means RateBeer experts aren’t afraid to share what didn’t impress them. In fact, 15.5% of reviews are negative, making this platform twice as likely to feature critical feedback. And for those who value objectivity, 9.15% of reviews are neutral, far more than you’ll find on BeerAdvocate. RateBeer has a vibe that’s more serious and straightforward. It’s a space for beer lovers who appreciate a more discerning perspective. If you’re looking for honesty and detail, even when it’s not all glowing praise, you’ll likely feel right at home here.
 
-While there are differences in tone, one thing is clear: both BeerAdvocate and RateBeer tend to lean positive overall. Even on RateBeer, where reviews are a bit more critical, the majority—over 75%—of expert reviews still celebrate the beers they’re reviewing. So, while the vibe might feel different, there’s no shortage of appreciation for great beer on either platform.
+While there are differences in tone, one thing is clear: both BeerAdvocate and RateBeer tend to lean positive overall. Even on RateBeer, where reviews are a bit more critical, the majority of expert reviews still celebrate the beers they’re reviewing. So, while the vibe might feel different, there’s no shortage of appreciation for great beer on either platform.
 
-But enough about the vibe—let’s get into the nitty-gritty of what these experts are actually saying. Let’s crack open the reviews and take a closer look at the language that’s shaping the beer-loving world. Cheers to finding out!
+But enough about the vibe, let’s get into the nitty-gritty of what these experts are actually saying. Let’s crack open the reviews and take a closer look at the language that’s shaping the beer-loving world.
 
 # What kind of words do they use?
 
@@ -195,7 +195,7 @@ To begin, we’ve chosen a simple yet effective method: **WordClouds**. These cl
     </div>
 </div>
 
-BeerAdvocate reviewers are all about the taste and flavor—the heart and soul of any great beer experience. Words like "taste", "aroma", and "flavor" dominate, showing a clear focus on the sensory elements. But they don’t stop there, presentation also gets its fair share of attention, with frequent mentions of foam, color, and clarity. After all, a beer has to look as good as it tastes, right?
+BeerAdvocate reviewers are all about the taste and flavor, the heart and soul of any great beer experience. Words like "taste", "aroma", and "flavor" dominate, showing a clear focus on the sensory elements. But they don’t stop there, presentation also gets its fair share of attention, with frequent mentions of foam, color, and clarity. After all, a beer has to look as good as it tastes, right?
 On the other hand, RateBeer experts serve up a similarly detailed analysis of flavor and aroma, but with a broader palette of terms. You’ll find mentions of "bitter", "sweet malt", and even "tropical fruit", offering both general impressions and specific tasting notes. They’re equally observant about appearance and mouthfeel, commenting on foam color, carbonation, and the beer’s body with precision. 
 
 Of course, WordClouds are a bit like skimming the headlines—they show us which words pop up most often, but they don’t capture the context or the deeper connections between words. Moreover, since lemmatization was not applied to the reviews due to computational constraints, the WordCloud may display variations of the same word (e.g., "run," "running," "ran") as separate entries, which could limit its ability to reflect the true prominence of certain terms. So while this quick visual dive gives us a snapshot of each platform’s style, there’s more to uncover beneath the surface. Stay tuned, because we’re taking this analysis up a notch with more sophisticated techniques that dig into the true themes of these reviews! Cheers to finding out !
@@ -206,9 +206,9 @@ Of course, WordClouds are a bit like skimming the headlines—they show us which
 
 We need a method that doesn’t just count words but detects themes, clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in, a clever machine learning technique that dives into the text to uncover the hidden themes lurking within reviews. Think of it as finding the common threads that tie conversations together. Here’s the magic behind it:
 
-Every review tells a story: LDA sees each review as a mix of topics, and each topic as a blend of words that frequently appear together. 
-Spotting patterns in the noise: By analyzing word co-occurrence across thousands of reviews, LDA groups similar words into distinct topics. 
-Bringing themes to life: Each topic is revealed through its top words, giving us a window into what it’s all about.
+- Every review tells a story: LDA sees each review as a mix of topics, and each topic as a blend of words that frequently appear together. 
+- Spotting patterns in the noise: By analyzing word co-occurrence across thousands of reviews, LDA groups similar words into distinct topics. 
+- Bringing themes to life: Each topic is revealed through its top words, giving us a window into what it’s all about.
 
 For our analysis, we focused on uncovering 10 key topics, enough to capture the diversity of conversations without getting lost in the details. The result? A crystal-clear snapshot of what the BeerAdvocate and RateBeer communities are buzzing about. The interactive **PyLDAvis visualization** helps us explore the detected topics in detail.  
 
@@ -235,7 +235,7 @@ By analyzing the most important words for each topic, we interpreted their theme
 | **9**     | "flavour", "colour", "malty", "pale"      | A global lexicon focusing on flavors, colors, and traditional styles.     |
 
 
-To uncover how these topics resonate within each platform, we turned to a heatmap—a vibrant snapshot of topic prevalence. This visualization reveals where BeerAdvocate and RateBeer overlap, diverge, or spotlight entirely different themes.
+To uncover how these topics resonate within each platform, we turned to a heatmap, a vibrant snapshot of topic prevalence. This visualization reveals where BeerAdvocate and RateBeer overlap, diverge, or spotlight entirely different themes.
 
 {% include_relative figs/topic_distribution_heatmap.html %}
 
