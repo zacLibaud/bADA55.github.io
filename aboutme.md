@@ -24,5 +24,11 @@ William, our clustering pro, likes to push the boundaries. Like a triple IPA, he
 Always ready to test a new method, Pierre is like an experimental saison beer: innovative, full of surprises, and always looking for the next big idea. He's the perfect embodiment of the spirit of exploration and adaptability.
 
 
+## A METTRE DANS INDEX.MD?
+
+{% include_relative figs/fig_experts_selection.html %}
+
+<img src="figs/practically-an-expert-ollie.gif" style="display: block; margin: auto;" width="400">
+
 
 
