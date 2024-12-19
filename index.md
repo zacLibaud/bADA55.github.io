@@ -220,7 +220,7 @@ For our analysis, we chose to detect **10 topics** to capture a variety of theme
 
 The interactive **PyLDAvis visualization** helps us explore the detected topics in detail.  
 
-{% include_relative figs/lada_visualization.html %}
+{% include_relative figs/lda_visualization.html %}
 
 #### **What PyLDAvis Reveals**
 1. **Distinct Topics**: Each circle represents a topic, and the size of the circle reflects its importance. The distance between circles shows how distinct the topics are. Topics that are far apart, like **Topic 4 and Topic 9**, cover **different themes**.
@@ -289,8 +289,6 @@ Through topic modeling, we’ve uncovered how BeerAdvocate and RateBeer differ n
 
 Now that you know what each platform offers, the choice is yours. Will you stick to the structured, sensory reviews of BeerAdvocate? Or dive into the broad, diverse world of RateBeer?  
 Cheers to finding the community that matches your beer journey! 🍻
-🍻
-
 
 
 # The final choice
