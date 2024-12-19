@@ -545,7 +545,7 @@ footer .footer-custom-content {
 }
 .post-preview .post-image {
   float: right;
-  margin-left: 0.625rem;
+  margin-left: 0.400rem; /*CHANGE: init: 0.625*/
   height: 12rem;
   width: 12rem;
 }
