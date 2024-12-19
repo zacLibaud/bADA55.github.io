@@ -87,7 +87,7 @@ Even if everyone plays a role, this underscores just how crucial Experts are to 
 
 While this threshold-based grouping provides a straightforward categorization, it doesn’t capture the behavioral nuances of reviewers. To refine our analysis, and group users into meaningful categories, we turned to another method, called K-Means Clustering, that allows us to organize users based on three key dimensions of “experience”.
 
-Experience is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
+**Experience** is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
 
 - Total Reviews:
 The total number of reviews written by a user—measuring their overall contribution to the platform.
@@ -135,11 +135,11 @@ Good news, the experts highlighted by the first (threshold) method are also foun
 By taking the experts identified through the threshold method, we prioritize users whose contributions are quantifiable and whose knowledge is backed by substantial activity. Since they represent already 50% of the reviews, this refined subset serves as a sufficient and solid foundation and offers a focused lens for deeper analysis.
 
 #### Next Steps
-Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their contentquality.
+Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality.
 
 # What language do they speak ?
 
-Now we're going to try and understand which languages these famous experts use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
+First we're going to analyze which languages these famous experts use in their reviews. Maybe we could differentiate our two platforms using this criterion ?
 
 We utilized the powerful fastText library to analyze the language of our experts' reviews. We referred to this [comparison of language detection models](https://modelpredict.com/language-identification-survey) to evaluate various options. fastText stood out for its robust performance, ease of use, and the ability to handle large-scale data efficiently, making it an excellent choice for our analysis. Let's see the language of the experts reviews:
 {% include_relative figs/proportion_reviews_comparison.html %}
