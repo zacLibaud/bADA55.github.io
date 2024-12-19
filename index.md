@@ -129,12 +129,14 @@ But we’re not stopping there. To keep things interesting, we’re pitting this
 | **Number of experienced users with Threshold method**  | 902          | 611       |
 | **Percentage of experienced users from Threshold in group from Clustering** | 100.00%      | 100.00%   |
 
-Good news, the experts highlighted by the first (threshold) method are also found by the clustering method. Actually, this is not so surprising... The threshold method focuses on identifying users with a high number of reviews, highlighting those who have consistently engaged with the platform over time, while clustering groups users based on other behavioral pattern, the number of reviews also being included in the features. And it seems that this one allows for a good separation.
+Good news, the experts highlighted by the first (threshold) method are also found by the clustering method!
+
+Actually, this is not so surprising... The threshold method focuses on identifying users with a high number of reviews, highlighting those who have consistently engaged with the platform over time, while clustering groups users based on other behavioral pattern, the number of reviews also being included in the features. And it seems that this one allows for a good separation.
 
 By taking the experts identified through the threshold method, we prioritize users whose contributions are quantifiable and whose knowledge is backed by substantial activity. Since they represent already 50% of the reviews, this refined subset serves as a sufficient and solid foundation and offers a focused lens for deeper analysis.
 
 #### Next Steps
-Given the significant influence of **Experts** on the review landscape, we will now focus our analysis on their reviews to better understand their impact on the platforms and their content quality.
+Given the significant influence of **Experts** on the ratings landscape, we're now going to focus our analysis on their comments so that, we hope, we can compare the two platforms even better to help you make a choice.
 
 # What language do they speak ?
 
