@@ -168,7 +168,7 @@ It seems that both platforms have a similar mix of positive, negative, and neutr
 
 For example, a review like “The beer has a smooth texture and a pleasant taste” might score high on neutrality due to its descriptive language but still reflect positivity because of words like “smooth” and “pleasant”. On the flip side, a review such as “The beer lacks flavor and is quite bland” could also show neutrality in tone but carry a negative sentiment because of words like “lacks” and “bland”.
 
-This nuanced balance of sentiment shows that reviewers on both platforms aren’t just cheerleaders or critics, they’re detailed and expressive, capturing the good, the bad, and everything in between. But now, let's have a look at the overall sentiment of experts reviews. This is done by classifying the review as positive, negative or neutral based on its compound score. It's like the ultimate vibe check for the review's text, it’s a single, all-encompassing score that sums up the balance of positive, negative, and neutral feels.
+This nuanced balance of sentiment shows that reviewers on both platforms aren’t just cheerleaders or critics, they’re detailed and expressive, capturing the good, the bad, and everything in between. But now, let's have a look at the overall sentiment of experts reviews. This is done by classifying the review as positive, negative or neutral based on its compound score. It's like the ultimate vibe check for each review's text, it’s a single, all-encompassing score that sums up the balance of positive, negative, and neutral feels.
 
 {% include_relative figs/sentiment_comparison.html %}
 
