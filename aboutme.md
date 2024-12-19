@@ -2,6 +2,7 @@
 layout: page
 title: About us
 subtitle: For the more curious
+cover-img: /assets/img/titre_2.JPG
 ---
 
 ## Who are we? 
