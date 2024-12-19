@@ -275,7 +275,7 @@ Cheers to finding the community that matches your beer journey! 🍻
 
 <img src="figs/ted-lasso-tv-show.gif" style="display: block; margin: auto;" width="400">
 
-Through this deep dive, we’ve uncovered what makes each platform tick, helping beer you decide which one aligns with your vibe. We explored how beers are graded, revealing the unique priorities each platform places on aspects like palate, aroma, and appearance. We dug into user behavior, spotlighting the expert reviewers who bring depth and insight to their critiques. From there, we analyzed the diversity of their voices, the tone of their reviews, and the richness of their language to understand each platform’s personality. Whether you’re all about detailed breakdowns, expert opinions, or a global, vibrant community, this project arms you with the insights to choose the platform that matches your style. Cheers to making smarter choices! 
+Through this deep dive, we’ve uncovered what makes each platform tick, helping you decide which one aligns with your vibe. We explored how beers are graded, revealing the unique priorities each platform places on aspects like palate, aroma, and appearance. We dug into user behavior, spotlighting the expert reviewers who bring depth and insight to their critiques. From there, we analyzed the diversity of their voices, the tone of their reviews, and the richness of their language to understand each platform’s personality. Whether you’re all about detailed breakdowns, expert opinions, or a global, vibrant community, this project arms you with the insights to choose the platform that matches your style. Cheers to making smarter choices! 
 
 # References
 
