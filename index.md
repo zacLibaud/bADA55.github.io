@@ -202,29 +202,22 @@ Of course, WordClouds are a bit like skimming the headlines—they show us which
 
 ## **From Words to Themes: Diving Deeper with Topic Modeling**
 
-WordClouds are like looking at a list of ingredients without knowing how they’re combined. They tell us what words are frequent but don’t reveal the deeper connections between those words or the larger themes they represent. For example: Are “aroma” and “hoppy” linked to discussions about IPAs? Does “brewpub” suggest a focus on drinking environments on RateBeer? What bigger stories emerge when we analyze the entire vocabulary in context?
+We need a method that doesn’t just count words but detects themes, clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in, a clever machine learning technique that dives into the text to uncover the hidden themes lurking within reviews. Think of it as finding the common threads that tie conversations together. Here’s the magic behind it:
 
-To answer these questions, we need a method that doesn’t just count words but detects themes, clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in, a clever machine learning technique that dives into the text to uncover the hidden themes lurking within reviews. Think of it as finding the common threads that tie conversations together. Here’s the magic behind it:
+Every review tells a story: LDA sees each review as a mix of topics, and each topic as a blend of words that frequently appear together. 
+Spotting patterns in the noise: By analyzing word co-occurrence across thousands of reviews, LDA groups similar words into distinct topics. 
+Bringing themes to life: Each topic is revealed through its top words, giving us a window into what it’s all about.
 
-Every review tells a story: LDA sees each review as a mix of topics, and each topic as a blend of words that frequently appear together. Spotting patterns in the noise: By analyzing word co-occurrence across thousands of reviews, LDA groups similar words into distinct topics. Bringing themes to life: Each topic is revealed through its top words, giving us a window into what it’s all about.
-
-For our analysis, we focused on uncovering 10 key topics—enough to capture the diversity of conversations without getting lost in the details. The result? A crystal-clear snapshot of what the BeerAdvocate and RateBeer communities are buzzing about. The interactive **PyLDAvis visualization** helps us explore the detected topics in detail.  
+For our analysis, we focused on uncovering 10 key topics, enough to capture the diversity of conversations without getting lost in the details. The result? A crystal-clear snapshot of what the BeerAdvocate and RateBeer communities are buzzing about. The interactive **PyLDAvis visualization** helps us explore the detected topics in detail.  
 
 {% include_relative figs/lda_visualization.html %}
 
-#### **What PyLDAvis Reveals**
-1. **Distinct Topics**: Each circle represents a topic, and the size of the circle reflects its importance. The distance between circles shows how distinct the topics are. Topics that are far apart, like **Topic 4 and Topic 9**, cover **different themes**.
-2. **Top Words**: On the right, you can see the most important words for each topic. For example:
-   - Topic 0 highlights sensory descriptors like **“aroma”** and **“mouthfeel”**.
-   - Topic 4 mentions fruity and spicy flavors, including **“citrus”**, **“spice”**, and **“banana”**.
+Each circle represents a topic, and its size shows how important that topic is. The distance between the circles tells a fascinating story: the farther apart two topics are, the more distinct their themes. Take Topic 4 and Topic 9, for instance, they live in completely different worlds of beer talk.
 
-This interactivity demonstrates that the topics detected by LDA are **not overlapping excessively**, ensuring they capture distinct themes.
+On the right, you’ll find the key words that bring each topic to life. For example, Topic 0 dives into sensory experiences with words like “aroma” and “mouthfeel.”Topic 4 paints a picture of fruity and spicy flavors with words like “citrus”, “spice”, and “banana.”
+This interactive visualization proves one thing: the topics detected by LDA are clear and distinct, without excessive overlap. They represent unique perspectives within the beer enthusiast community.
 
----
-
-### **What Each Topic Represents**
-
-Based on the most important words in each topic, we interpreted their meanings:
+By analyzing the most important words for each topic, we interpreted their themes as follows:
 
 | **Topic** | **Top Words**                             | **What It Represents**                                                    |
 |-----------|-------------------------------------------|----------------------------------------------------------------------------|
@@ -239,27 +232,22 @@ Based on the most important words in each topic, we interpreted their meanings:
 | **8**     | "Taste", "citrus", "roasted", "hazy"      | Complex flavor profiles, mixing citrus, roasted notes, and modern trends. |
 | **9**     | "flavour", "colour", "malty", "pale"      | A global lexicon focusing on flavors, colors, and traditional styles.     |
 
----
 
-### **How Topics Are Distributed**
-
-To understand how these topics are distributed between the platforms, we visualized their prevalence in a **heatmap**:
+To uncover how these topics resonate within each platform, we turned to a heatmap—a vibrant snapshot of topic prevalence. This visualization reveals where BeerAdvocate and RateBeer overlap, diverge, or spotlight entirely different themes.
 
 {% include_relative figs/topic_distribution_heatmap.html %}
 
-#### **What the Heatmap Shows**
-- **BeerAdvocate**:
-   - Dominates in **Topics 0, 5, and 6**, focusing on sensory elements, traditional beer descriptions, and darker styles.
-   - The concentration in a few topics suggests a **narrow but intense focus** on classic beer review elements.
-- **RateBeer**:
-   - Topics are more evenly distributed, with strong representation in **Topics 1, 3, 4, 7, 8, and 9**.
-   - This indicates a **broader thematic coverage**, touching on modern craft styles, drinking environments, and global perspectives.
+The heatmap reveals fascinating differences in how BeerAdvocate and RateBeer approach the world of beer:
 
----
+**BeerAdvocate:**
+Shines brightest in Topics 0, 5, and 6, diving deep into sensory details, traditional beer characteristics, and darker styles.
+Its concentrated focus suggests a laser-sharp dedication to classic beer reviews and tasting nuances.
+**RateBeer:**
+Spreads its voice across Topics 1, 3, 4, 7, 8, and 9, exploring modern craft trends, unique drinking experiences, and global influences.
+This broader reach paints a picture of diverse interests and a more adventurous audience.
 
-### **What This Means for You**
+Whether you’re a purist craving traditional beer analysis or an explorer chasing global craft trends, the choice of platform matters. BeerAdvocate hones in on the classics, while RateBeer offers a wide-angle view of the beer world. Which one speaks to you?
 
-This distribution has significant implications for choosing the platform that fits your preferences:
 
 | **Your Preference**                               | **Best Platform**       |
 |--------------------------------------------------|-------------------------|
@@ -269,13 +257,6 @@ This distribution has significant implications for choosing the platform that fi
 | Discussions about drinking environments          | **RateBeer**            |
 | A global lexicon and international perspective   | **RateBeer**            |
 
----
-
-### **Conclusion**
-
-Through topic modeling, we’ve uncovered how BeerAdvocate and RateBeer differ not just in the words they use but in the **themes they explore**:
-- **BeerAdvocate**: A platform for traditionalists who value **focused sensory reviews**.
-- **RateBeer**: A hub for explorers who enjoy **diversity, trends, and global beer styles**.
 
 Now that you know what each platform offers, the choice is yours. Will you stick to the structured, sensory reviews of BeerAdvocate? Or dive into the broad, diverse world of RateBeer?  
 Cheers to finding the community that matches your beer journey! 🍻
