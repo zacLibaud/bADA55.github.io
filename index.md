@@ -120,13 +120,17 @@ AJOUTER GRAPHE DEROULANT
 {% include_relative figs/PCA_clustering_BA.html %}
 {% include_relative figs/PCA_clustering_RB.html %}
 
+Through clustering, distinct groups of users began to emerge, each with its own unique personality. This approach let us zero in on the true experts, uncovering their habits, consistency, and passion for beer reviews.
 
+But we’re not stopping there. To keep things interesting, we’re pitting this method against the simpler, threshold-based approach. The goal? To see if the experts we found with the threshold method are also pointed out by the clusering method or if clustering reveals hidden gems the threshold method might have missed.
 
 |                                | BeerAdvocate | RateBeer  |
 |--------------------------------|--------------|-----------|
 | **Number of experienced users with Clustering method** | 8396         | 8652      |
 | **Number of experienced users with Threshold method**  | 902          | 611       |
 | **Percentage of experienced users from Threshold in group from Clustering** | 100.00%      | 100.00%   |
+
+
 
 
 #### Next Steps
