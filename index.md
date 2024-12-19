@@ -202,7 +202,7 @@ Of course, WordClouds are a bit like skimming the headlines—they show us which
 
 <img src="figs/giphy.gif" style="display: block; margin: auto;" width="400">
 
-**From Words to Themes: Diving Deeper with Topic Modeling**
+### From Words to Themes: Diving Deeper with Topic Modeling
 
 We need a method that doesn’t just count words but detects themes, clusters of related ideas that dominate the reviews. This is where **Latent Dirichlet Allocation (LDA)** comes in, a clever machine learning technique that dives into the text to uncover the hidden themes lurking within reviews. Think of it as finding the common threads that tie conversations together. Here’s the magic behind it:
 
