@@ -49,14 +49,10 @@ body {
 }
 body > main {
   flex: 1;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
-  max-width: 90ch;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--header-font);
@@ -96,7 +92,7 @@ blockquote p:first-child {
   background: #EEE;
 }
 hr.small {
-  max-width: 6.25rem;
+  max-width: 10rem; /*max-width: 6.25rem; CHANGE*/
   margin: 1rem auto;
   border-width: 0.25rem;
   border-color: inherit;
