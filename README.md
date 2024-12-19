@@ -23,15 +23,19 @@ Not all reviewers are equal, and some can be considered experts. But what makes 
 
 ### What language do they speak ?
 
-Before going into the analysis of the reviews of the experts users we identify their languages using fasttext.
+Before going into the analysis of the reviews of the experts users, we identify their languages.
+
+**Method:** using fasttext.
 
 ### Which sentiment do they express the most ?
 
-Using SentimentIntensityAnalyzer from Vader we aim to see the sentiment scores and the overall sentiment of each review.
+Using SentimentIntensityAnalyzer from Vader we aim to see the sentiment scores and the overall sentiment of each review to compare both plateforms.
 
-### What kind of words to they use ?
+### What kind of words do they use ?
 
-Identify the topics of experts reviews using LDA.
+Once we have identified the experts we are interested in, we can analyse their vocabulary to compare the two platforms. 
+
+**Method:** To do this, we will first use the WorldClouds method to get an initial overview before using the Latent Dirichlet Allocation (LDA) method for a more detailed analysis of the topics used.
 
 ## Distribution of tasks
 
@@ -39,7 +43,7 @@ Identify the topics of experts reviews using LDA.
 - Zacharie LIBAUD : preprocessing, language analysis, website
 - Zoé MONNARD : language detection, sentimental analysis, website
 - William SCHMID : kmean clustering
-- Pierre TESSIER : website
+- Pierre TESSIER : kmeans, website
 
 
 
