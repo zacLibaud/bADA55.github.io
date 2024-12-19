@@ -95,15 +95,15 @@ While this threshold-based grouping provides a straightforward categorization, i
 
 **Experience** is not a single metric; it’s a combination of multiple factors that reflect a user’s activity and engagement on the platform. For this analysis, we focused on three key indicators:
 
-- Total Reviews:
+- **Total Reviews**:
 The total number of reviews written by a user—measuring their overall contribution to the platform.
 
-- Consistency Over Time:
+- **Consistency Over Time**:
 Using the mean and standard deviation of time intervals between reviews, we capture both regularity and variability:
 A low standard deviation indicates steady, consistent reviewing behavior.
 A higher mean or large gaps between reviews suggests more sporadic contributions.
 
-- Style Diversity:
+- **Style Diversity**:
 The number of beer styles a user has reviewed, reflecting their willingness to explore different types of beers. Greater diversity often correlates with broader knowledge and a more experienced palate.
 
 By combining these features, we constructed a robust definition of "experience" that moves beyond simple review counts to capture a more nuanced picture of user behavior. Where do experts hide ? Let's find the clusters.
