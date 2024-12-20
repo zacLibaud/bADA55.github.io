@@ -78,7 +78,7 @@ The bottom 50% of users, who are just starting out or have written very few revi
 
 Let's exactly see the proportion they all represent in terms of total users and total reviews : 
 
-{% include_relative figs/fig_experts_selection.html %}
+{% include_relative figs/fig_experts_selection_2.html %}
 
 
 **The Power of Experts**:  
