@@ -2,7 +2,7 @@
 layout: page
 title: About us
 subtitle: For the more curious
-cover-img: /figs/the-breakfast-club-brian-johnson.gif
+cover-img: /figs/gif_badass.gif
 ---
 
 ## Who are we? 
